@@ -1,6 +1,6 @@
 @use "../global" as global;
 
 .l-fv {
-  background: rgba(148, 148, 148, 0.445);
-  height: 200px;
+  background: url(/img/fv/fv-bg.png) no-repeat center center/cover;
+  height: 560px;
 }
