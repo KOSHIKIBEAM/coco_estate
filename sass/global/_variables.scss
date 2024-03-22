@@ -1,15 +1,15 @@
 // 色
-$main-color: #fff; // メインカラー
-$bg-color: #5cc4ff; // bgカラー
-$pink-color: #ff70b0; // ピンクカラー
-$blue-color: #118fd8; // ブルーカラー
-$black-color: #000; // テキストカラー
+$main-color: #192f60; // メインカラー
+$accent-color: #fff; // アクセントカラー
+$text-color: #333333; // テキストカラー
+$txt-color2D: #2d2d2d; // テキストカラー
+$btn-color: #222222; // ボタンカラー
 
-@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
 // フォント
-$ff-kozuka: "kozuka-gothic-pr6n", sans-serif; // kozuka
-$ff-base: "Zen Kaku Gothic New", sans-serif; // 日本語標準
+
+$ff-mont: "Montserrat", sans-serif; // Font Awesome
+$ff-base: "Noto Sans JP", sans-serif; // 日本語標準
 $fz-base: 16px; // ベースフォントサイズ
 $fw-base: 500; // ベースフォントウェイト
 $lh-base: 1.6; // ベース行間

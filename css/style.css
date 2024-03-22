@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
 *,
 *::before,
 *::after {
@@ -78,12 +78,11 @@ a {
 }
 
 body {
-  color: #000;
-  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #333333;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  background: #5cc4ff;
 }
 
 body.active {
@@ -102,6 +101,260 @@ a {
 }
 a:hover {
   opacity: 0.7;
+}
+
+.l-header {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 0 0 auto;
+  position: relative;
+}
+
+.l-fv {
+  background: rgba(148, 148, 148, 0.445);
+  height: 200px;
+}
+
+.p-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100%;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-header {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-header {
+    height: 60px;
+  }
+}
+.p-header__logo {
+  margin-left: 3%;
+  width: 280px;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-header__logo img {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-header__logo img {
+    width: 80px;
+  }
+}
+.p-header__nav {
+  height: 100%;
+}
+.p-header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+.p-header__nav .p-header__nav-item {
+  padding-top: 7px;
+}
+.p-header__nav .p-header__nav-item:nth-child(1) {
+  padding-right: 49px;
+}
+.p-header__nav .p-header__nav-item:nth-child(2) {
+  padding-right: 31px;
+}
+.p-header__nav .p-header__nav-item:nth-child(3) {
+  padding-right: 40px;
+}
+.p-header__nav .p-header__nav-item:nth-child(4) {
+  padding-right: 40px;
+}
+.p-header__nav .p-header__nav-item:nth-child(5) {
+  padding-right: 40px;
+}
+.p-header__nav .p-header__nav-item a {
+  position: relative;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+.p-header__nav .p-header__nav-item a::before {
+  background: #192f60;
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.p-header__nav .p-header__nav-item a:hover::before {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.p-header__nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.p-header__nav a .p-header-nav__link {
+  font-size: 14px;
+  color: #192f60;
+}
+
+.p-header-nav__btn {
+  background: #222222;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 80px;
+  width: 190px;
+  font-family: "Montserrat", sans-serif;
+}
+.p-header-nav__btn:hover {
+  opacity: 0.8;
+}
+.p-header-nav__btn a {
+  height: 80px;
+  width: 190px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.p-header-nav__btn a img {
+  width: 17px;
+  height: 12px;
+}
+.p-header-nav__btn span {
+  margin-left: 10px;
+}
+
+.p-drawer {
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .p-drawer {
+    display: none;
+  }
+}
+.p-drawer__icon {
+  position: absolute;
+  top: -15px;
+  right: 1rem;
+  z-index: 42;
+  cursor: pointer;
+}
+.p-drawer__icon span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33px;
+  height: 7px;
+  background: #111;
+  -webkit-transition: top 0.3s linear, -webkit-transform 0.3s linear;
+  transition: top 0.3s linear, -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear, top 0.3s linear;
+  transition: transform 0.3s linear, top 0.3s linear, -webkit-transform 0.3s linear;
+}
+.p-drawer__icon span:nth-of-type(2) {
+  top: 11px;
+}
+.p-drawer__icon span:nth-of-type(3) {
+  top: 22px;
+}
+.p-drawer__icon.active span:nth-of-type(1) {
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #fff;
+}
+.p-drawer__icon.active span:nth-of-type(2) {
+  display: none;
+}
+.p-drawer__icon.active span:nth-of-type(3) {
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: #fff;
+}
+
+.p-drawer__panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 41;
+  padding: 8rem 0rem 2rem;
+  width: 50vw;
+  height: 100vh;
+  background: #192f60;
+  translate: 100vw;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media screen and (max-width: 599px) {
+  .p-drawer__panel {
+    width: 80vw;
+  }
+}
+.p-drawer__panel ul {
+  list-style: none;
+}
+.p-drawer__panel li {
+  padding: 1.75rem 0;
+  border-bottom: 1px dotted #fff;
+  position: relative;
+}
+.p-drawer__panel li:first-child {
+  border-top: 1px dotted #fff;
+}
+.p-drawer__panel li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 79px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(/img/fv/Icon\ awesome-caret-right.svg) no-repeat center center/contain;
+  width: 15px;
+  height: 14px;
+}
+.p-drawer__panel a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  display: block;
+  padding-left: 30px;
+}
+.p-drawer__panel.active {
+  translate: 0;
+  opacity: 1;
 }
 
 @media screen and (min-width: 1024px) {

@@ -1,0 +1,8 @@
+@use "../global" as global;
+
+.l-header {
+  width: 100%;
+  background-color: global.$accent-color;
+  margin: 0 0 0 auto;
+  position: relative;
+}
