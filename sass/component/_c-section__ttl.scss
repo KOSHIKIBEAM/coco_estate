@@ -1,0 +1,30 @@
+@use "../global" as global;
+
+.c-section__ttl {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 36px;
+    font-family: global.$ff-mont;
+    position: relative;
+    padding: 0 10px 0 20px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 36px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
