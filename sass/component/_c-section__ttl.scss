@@ -16,7 +16,7 @@
       content: "";
       width: 8px;
       height: 36px;
-      background: #fff;
+      background: global.$main-color;
       position: absolute;
       top: 50%;
       left: 2%;
@@ -29,11 +29,11 @@
   }
 }
 
-.p-flow {
+.p-search {
   .c-section__ttl {
     h2 {
       &::before {
-        background: global.$main-color;
+        background: #fff;
       }
     }
   }
