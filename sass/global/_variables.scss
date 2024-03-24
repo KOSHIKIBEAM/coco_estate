@@ -1,14 +1,14 @@
 // 色
 $main-color: #ffdb00; // メインカラー
 $accent-color: #fff; // アクセントカラー
-$text-color: #333333; // テキストカラー
-$txt-color2D: #2d2d2d; // テキストカラー
+$text-color: #343434; // テキストカラー
 $btn-color: #222222; // ボタンカラー
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap");
 // フォント
 
-$ff-mont: "Montserrat", sans-serif; // Font Awesome
+$ff-oswald: "Oswald", sans-serif;
+$ff-mont: "Montserrat", sans-serif;
 $ff-base: "Noto Sans JP", sans-serif; // 日本語標準
 $fz-base: 16px; // ベースフォントサイズ
 $fw-base: 400; // ベースフォントウェイト
