@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap");
 *,
 *::before,
 *::after {
@@ -78,7 +78,7 @@ a {
 }
 
 body {
-  color: #333333;
+  color: #343434;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -125,6 +125,11 @@ a:hover {
   text-align: center;
 }
 
+.l-flow {
+  padding: 70px 0 94px;
+  text-align: center;
+}
+
 .c-section__ttl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +160,10 @@ a:hover {
 .c-section__ttl p {
   font-size: 18px;
   font-weight: bold;
+}
+
+.p-flow .c-section__ttl h2::before {
+  background: #ffdb00;
 }
 
 .p-header {
@@ -536,6 +545,168 @@ a:hover {
 }
 .p-search__result-item:nth-child(-n+3) {
   margin-top: 80px;
+}
+.p-flow {
+  width: 81.99%;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.tab {
+  margin-top: 32px;
+}
+
+.tab-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab-list__item {
+  text-align: center;
+  width: calc(33.3333333333% - 2px);
+  background-color: #eee;
+  padding: 20px 0;
+  cursor: pointer;
+  margin-right: 3px;
+}
+.tab-list__item:last-child {
+  margin-right: 0;
+}
+
+.tab-list__item.active {
+  background-color: #ffdb00;
+}
+
+.tab-contents {
+  padding: 60px 60px 70px;
+  background-color: #ffdb00;
+}
+
+.tab-contents__items {
+  display: none;
+}
+.tab-contents__items > P {
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+.tab-contents__items.show {
+  display: block;
+  -webkit-animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+.tab-contents__item {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 44px;
+}
+.tab-contents__item:last-child {
+  margin-bottom: 0;
+}
+.tab-contents__item::before {
+  content: "";
+  background: url(/img/flow/arrow.png) no-repeat center center/cover;
+  position: absolute;
+  bottom: -13%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 28px;
+  height: 14px;
+}
+
+.tab-contents__item-number {
+  background: #343434;
+  border-radius: 5px;
+  width: 105px;
+  height: 105px;
+  color: #fff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px;
+}
+.tab-contents__item-number p {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.04em;
+}
+.tab-contents__item-number p:nth-child(1) {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.tab-contents__item-number p:nth-child(2) {
+  font-size: 32px;
+}
+
+.tab-contents__item-body {
+  text-align: left;
+}
+
+.tab-contents__item-ttl {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  margin-top: 3px;
+}
+
+.tab-contents__item-txt {
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+.tab-contents__text {
+  width: 100%;
+  border: 3px solid #343434;
+  padding: 20px 0;
+  background: url(/img/flow/flow-text-bg.png) no-repeat center center/cover;
+}
+.tab-contents__text p {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .p-result {
   width: 81.99%;

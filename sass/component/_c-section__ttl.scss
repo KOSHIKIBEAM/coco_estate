@@ -28,3 +28,13 @@
     font-weight: bold;
   }
 }
+
+.p-flow {
+  .c-section__ttl {
+    h2 {
+      &::before {
+        background: global.$main-color;
+      }
+    }
+  }
+}
