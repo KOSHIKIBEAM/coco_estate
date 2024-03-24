@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap");
 *,
 *::before,
@@ -126,7 +127,13 @@ a:hover {
 }
 
 .l-flow {
-  padding: 70px 0 94px;
+  padding: 70px 0 118px;
+  text-align: center;
+  background: #f2f2ed;
+}
+
+.l-qa {
+  padding: 70px 0 118px;
   text-align: center;
 }
 
@@ -150,7 +157,7 @@ a:hover {
   content: "";
   width: 8px;
   height: 36px;
-  background: #fff;
+  background: #ffdb00;
   position: absolute;
   top: 50%;
   left: 2%;
@@ -162,8 +169,8 @@ a:hover {
   font-weight: bold;
 }
 
-.p-flow .c-section__ttl h2::before {
-  background: #ffdb00;
+.p-search .c-section__ttl h2::before {
+  background: #fff;
 }
 
 .p-header {
@@ -811,6 +818,170 @@ a:hover {
   background: url(/img/result/button-icon.svg) no-repeat center center/contain;
   width: 24px;
   height: 24px;
+}
+
+.p-qa {
+  width: 81.99%;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+/* アコーディオン全体 */
+.p-qa__accordion {
+  margin: 45px auto 77px;
+}
+.p-qa__accordion:last-child {
+  margin: 45px auto 0px;
+}
+.p-qa__accordion h3 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 13px;
+}
+.p-qa__accordion h3::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  background: #343434;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* アコーディオン */
+.p-qa__accordion-item {
+  margin-bottom: 25px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  width: 89%;
+  margin: 0 auto 10px;
+}
+.p-qa__accordion-item:last-child {
+  margin: 0 auto;
+}
+
+/* アコーディオンのタイトル */
+.p-qa__accordion-title {
+  position: relative;
+  padding: 15px 60px 26px 65px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.p-qa__accordion-title img {
+  position: absolute;
+  top: 42%;
+  left: 3.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+}
+
+/* (+)アイコン */
+.p-qa__accordion-title::before,
+.p-qa__accordion-title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: -15%;
+  bottom: 0;
+  margin: auto 0;
+  background-color: #343434;
+  width: 20px;
+  height: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.p-qa__accordion-title::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* アコーディオンのコンテンツ */
+.p-qa__accordion-content {
+  padding: 17px 74px 30px 65px;
+  display: none;
+  cursor: pointer;
+  background: #f2f2ed;
+  position: relative;
+  font-size: 15px;
+  line-height: 2;
+}
+.p-qa__accordion-content > img {
+  position: absolute;
+  top: 42px;
+  left: 3.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 34px;
+  height: 34px;
+}
+.p-qa__accordion-content-body {
+  background: #fff;
+  padding: 22px 30px 47px;
+}
+.p-qa__accordion-content-body:nth-of-type(1) {
+  margin-top: 39px;
+}
+.p-qa__accordion-content-body:nth-of-type(2) {
+  margin-top: 51px;
+}
+.p-qa__accordion-content-body:nth-of-type(3) {
+  margin-top: 50px;
+}
+.p-qa__accordion-content-ttl {
+  font-size: 20px;
+  line-height: 1.4;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ffdb00;
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 10px;
+}
+.p-qa__accordion-content-ttl::before {
+  content: "■";
+  font-size: 8px;
+  position: absolute;
+  top: 47%;
+  left: 0.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.p-qa__accordion-content-txt {
+  font-size: 15px;
+  line-height: 2;
+}
+.p-qa__accordion-content-img {
+  width: 85%;
+  margin: 55px auto 0;
+}
+.p-qa__accordion-content .p-qa__accordion-img {
+  width: 85%;
+  margin: 55px auto 0;
+}
+
+.p-qa__accordion-content.is-open {
+  display: block;
+}
+
+/* アコーディオン展開時の(-)アイコン */
+.p-qa__accordion-item.is-active .p-qa__accordion-title::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.p-qa__accordion-item.is-active .p-qa__accordion-title::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0;
 }
 
 @media screen and (min-width: 1024px) {

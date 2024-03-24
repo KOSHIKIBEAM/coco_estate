@@ -1,0 +1,168 @@
+@use "../global" as global;
+
+.p-qa {
+  width: 81.99%;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+/* アコーディオン全体 */
+.p-qa__accordion {
+  margin: 45px auto 77px;
+
+  &:last-child {
+    margin: 45px auto 0px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: calc(40 / 25);
+    text-align: left;
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 13px;
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      background: global.$text-color;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/* アコーディオン */
+.p-qa__accordion-item {
+  margin-bottom: 25px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  width: 89%;
+  margin: 0 auto 10px;
+
+  &:last-child {
+    margin: 0 auto;
+  }
+}
+
+/* アコーディオンのタイトル */
+.p-qa__accordion-title {
+  position: relative;
+  padding: 15px 60px 26px 65px;
+  cursor: pointer;
+  font-size: 18px;
+
+  img {
+    position: absolute;
+    top: 42%;
+    left: 3.5%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* (+)アイコン */
+.p-qa__accordion-title::before,
+.p-qa__accordion-title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: -15%;
+  bottom: 0;
+  margin: auto 0;
+  background-color: global.$text-color;
+  width: 20px;
+  height: 2px;
+  transition: all 0.3s;
+}
+
+.p-qa__accordion-title::after {
+  transform: rotate(90deg);
+}
+
+/* アコーディオンのコンテンツ */
+.p-qa__accordion-content {
+  padding: 17px 74px 30px 65px;
+  display: none;
+  cursor: pointer;
+  background: #f2f2ed;
+  position: relative;
+  font-size: 15px;
+  line-height: calc(30 / 15);
+
+  & > img {
+    position: absolute;
+    top: 42px;
+    left: 3.5%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+  }
+
+  &-body {
+    background: #fff;
+    padding: 22px 30px 47px;
+
+    &:nth-of-type(1) {
+      margin-top: 39px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 51px;
+    }
+    &:nth-of-type(3) {
+      margin-top: 50px;
+    }
+  }
+  &-ttl {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    padding-bottom: 5px;
+    border-bottom: 3px solid global.$main-color;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 10px;
+
+    &::before {
+      content: "■";
+      font-size: 8px;
+      position: absolute;
+      top: 47%;
+      left: 0.5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-txt {
+    font-size: 15px;
+    line-height: calc(30 / 15);
+  }
+  &-img {
+    width: 85%;
+    margin: 55px auto 0;
+  }
+
+  .p-qa__accordion-img {
+    width: 85%;
+    margin: 55px auto 0;
+  }
+}
+
+.p-qa__accordion-content.is-open {
+  display: block;
+}
+
+/* アコーディオン展開時の(-)アイコン */
+.p-qa__accordion-item.is-active .p-qa__accordion-title::before {
+  transform: rotate(180deg);
+}
+
+.p-qa__accordion-item.is-active .p-qa__accordion-title::after {
+  transform: rotate(180deg);
+  opacity: 0;
+}
