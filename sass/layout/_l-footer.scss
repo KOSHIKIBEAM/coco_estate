@@ -1,0 +1,8 @@
+@use "../global" as global;
+
+.l-footer {
+  padding: 0px 0 116px;
+  text-align: left;
+  background: global.$text-color;
+  color: #fff;
+}

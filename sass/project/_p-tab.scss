@@ -1,0 +1,144 @@
+@use "../global" as global;
+
+.p-tab {
+  margin-top: 32px;
+}
+
+.p-tab-list {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.p-tab-list__item {
+  text-align: center;
+  width: calc(100% / 3 - 6px * 2 / 3);
+  background-color: #acaca1;
+  padding: 20px 0;
+  cursor: pointer;
+  margin-right: 6px;
+  color: #fff;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.p-tab-list__item.active {
+  background-color: global.$main-color;
+  color: #222;
+}
+
+.p-tab-contents {
+  padding: 60px 60px 70px;
+  background-color: global.$main-color;
+}
+.p-tab-contents__items {
+  display: none;
+
+  & > P {
+    margin-bottom: 50px;
+    font-size: 22px;
+  }
+}
+.p-tab-contents__items.show {
+  display: block;
+  -webkit-animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+.p-tab-contents__item {
+  background: global.$accent-color;
+  display: flex;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 44px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    background: url(/img/flow/arrow.png) no-repeat center center/cover;
+    position: absolute;
+    bottom: -13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 28px;
+    height: 14px;
+  }
+}
+
+.p-tab-contents__item-number {
+  background: global.$text-color;
+  border-radius: 5px;
+  width: 105px;
+  height: 105px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+
+  p {
+    font-family: global.$ff-oswald;
+    letter-spacing: 0.04em;
+
+    &:nth-child(1) {
+      font-size: 18px;
+      line-height: calc(27 / 18);
+    }
+
+    &:nth-child(2) {
+      font-size: 32px;
+    }
+  }
+}
+.p-tab-contents__item-body {
+  text-align: left;
+}
+.p-tab-contents__item-ttl {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  letter-spacing: 0.02em;
+  margin-top: 3px;
+}
+.p-tab-contents__item-txt {
+  font-size: 15px;
+  margin-top: 7px;
+}
+
+.p-tab-contents__text {
+  width: 100%;
+  border: 3px solid global.$text-color;
+  padding: 20px 0;
+  background: url(/img/flow/flow-text-bg.png) no-repeat center center/cover;
+
+  p {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    letter-spacing: 0.02em;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
