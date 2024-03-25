@@ -1,0 +1,18 @@
+@use "../global" as global;
+
+.l-single {
+  text-align: left;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 863px;
+    height: 863px;
+    background: global.$main-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0%, 0%);
+    z-index: -1;
+  }
+}
