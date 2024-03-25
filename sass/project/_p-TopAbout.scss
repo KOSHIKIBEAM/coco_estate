@@ -1,9 +1,9 @@
 @use "../global" as global;
 
-.p-about {
+.p-TopAbout {
   width: 100%;
   display: flex;
-  background: url(/img/about/about-bg.png) no-repeat center center/cover;
+  background: url(/img/TopAbout/about-bg.png) no-repeat center center/cover;
 
   &__wrap {
     padding: 87px 0 126px 9%;
@@ -42,7 +42,7 @@
     }
   }
 }
-.p-about__bottom-text {
+.p-TopAbout__bottom-text {
   background: global.$main-color;
   padding: 17px 0 26px;
   display: inline-block;
@@ -51,7 +51,7 @@
 
   &::before {
     content: "";
-    background: url(/img/about/icon.svg) no-repeat center center/cover;
+    background: url(/img/TopAbout/icon.svg) no-repeat center center/cover;
     position: absolute;
     top: 47%;
     right: 2%;

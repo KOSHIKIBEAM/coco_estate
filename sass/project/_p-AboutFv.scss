@@ -1,0 +1,79 @@
+@use "../global" as global;
+
+.p-AboutFv {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 683px;
+    height: 520px;
+    background: global.$main-color;
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  &__breadcrumb {
+    display: flex;
+    padding-top: 21px;
+    padding-left: 123px;
+
+    p {
+      color: global.$text-color;
+      font-size: 13px;
+      margin-right: 22px;
+      position: relative;
+
+      &::before {
+        content: ">";
+        position: absolute;
+        top: 50%;
+        right: -19px;
+        font-size: 14px;
+        transform: translate(-50%, -50%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 19px;
+  }
+
+  &__ttl {
+    text-align: left;
+    font-family: global.$ff-mont;
+    margin-right: -4.5%;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 60px;
+      line-height: calc(80 / 60);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+    p {
+      font-size: 20px;
+      line-height: calc(40 / 20);
+      font-weight: bold;
+    }
+  }
+  &__img {
+    width: 960px;
+    flex-shrink: 0;
+  }
+}
