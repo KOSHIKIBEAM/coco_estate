@@ -139,7 +139,12 @@ a:hover {
 
 .l-about {
   text-align: center;
-  padding: 0 0 120px;
+  padding: 0 0 111px;
+}
+
+.l-access {
+  padding: 0px 0 116px;
+  text-align: left;
 }
 
 .c-section__ttl {
@@ -875,7 +880,7 @@ a:hover {
 
 .p-about__bottom-text {
   background: #ffdb00;
-  padding: 20px 0 26px;
+  padding: 17px 0 26px;
   display: inline-block;
   width: 100%;
   position: relative;
@@ -1064,6 +1069,26 @@ a:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   opacity: 0;
+}
+
+.p-access {
+  width: 81.99%;
+  margin: 0 auto;
+  max-width: 1120px;
+}
+.p-access > P {
+  font-size: 16px;
+  line-height: 2;
+  margin-top: 40px;
+}
+.p-access__map {
+  height: 458px;
+  width: 100%;
+  margin-top: 30px;
+}
+.p-access iframe {
+  height: 458px;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
