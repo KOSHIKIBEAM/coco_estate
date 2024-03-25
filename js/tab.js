@@ -1,7 +1,7 @@
 // タブ
-const tabList = document.querySelectorAll(".tab-list__item");
+const tabList = document.querySelectorAll(".p-tab-list__item");
 // タブコンテンツ
-const tabContent = document.querySelectorAll(".tab-contents__items");
+const tabContent = document.querySelectorAll(".p-tab-contents__items");
 
 //DOMが読み込み終わったら
 document.addEventListener("DOMContentLoaded", function () {
