@@ -1,0 +1,137 @@
+@use "../global" as global;
+
+.p-single {
+  width: 81.99%;
+  margin: 0px auto 80px;
+  max-width: 1120px;
+
+  &__breadcrumb {
+    display: flex;
+    padding-top: 21px;
+
+    p {
+      color: global.$text-color;
+      font-size: 13px;
+      margin-right: 22px;
+      position: relative;
+
+      &::before {
+        content: ">";
+        position: absolute;
+        top: 50%;
+        right: -19px;
+        font-size: 14px;
+        transform: translate(-50%, -50%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+.p-single__info {
+  width: 96.5%;
+  margin: 80px auto 0;
+
+  .p-single__label {
+    display: inline-block;
+    width: 92px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    background: global.$text-color;
+  }
+  .p-single__address {
+    margin-top: 7px;
+    font-size: 36px;
+  }
+  .p-single__price {
+    margin-top: 16px;
+    font-size: 24px;
+  }
+  .p-single__access {
+    font-size: 16px;
+    color: #666;
+    position: relative;
+    padding-left: 19px;
+    margin-top: 17px;
+
+    &::before {
+      content: "";
+      background: url(/img/search/icon.svg) no-repeat center center/cover;
+      width: 11px;
+      height: 17px;
+      position: absolute;
+      top: 50%;
+      left: 0.5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .p-single__text {
+    width: 81%;
+    margin: 49px auto 82px;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    line-height: calc(32 / 16);
+  }
+}
+.p-single__btn {
+  background: #f2f2ec;
+  padding: 62px 0 100px;
+
+  .p-single__btn-inner {
+    width: 61%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    &:nth-child(1),
+    &:nth-child(3) {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 6px;
+        height: 10px;
+        top: 50%;
+        position: absolute;
+        background: url(/img/single/arrow.svg) no-repeat center center/cover;
+      }
+    }
+    &:nth-child(1) {
+      &::before {
+        left: -62%;
+        transform: translate(-50%, -50%) rotate(-180deg);
+      }
+    }
+    &:nth-child(2) {
+      width: 300px;
+      display: inline-block;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      height: 54px;
+      background: global.$main-color;
+    }
+    &:nth-child(3) {
+      &::before {
+        right: -83%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
