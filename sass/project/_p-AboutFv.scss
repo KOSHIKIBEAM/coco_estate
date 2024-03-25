@@ -76,4 +76,22 @@
     width: 960px;
     flex-shrink: 0;
   }
+
+  &__text {
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+
+      &:nth-child(1) {
+        width: 62%;
+      }
+      &:nth-child(2) {
+        width: 79.06%;
+        margin-top: 37px;
+      }
+    }
+  }
 }
