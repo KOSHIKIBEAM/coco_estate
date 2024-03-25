@@ -859,6 +859,21 @@ a:hover {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.p-AboutFv__text {
+  width: 100%;
+  padding: 120px 0;
+  text-align: center;
+}
+.p-AboutFv__text img {
+  margin: 0 auto;
+}
+.p-AboutFv__text img:nth-child(1) {
+  width: 62%;
+}
+.p-AboutFv__text img:nth-child(2) {
+  width: 79.06%;
+  margin-top: 37px;
+}
 
 .p-qa {
   width: 81.99%;
