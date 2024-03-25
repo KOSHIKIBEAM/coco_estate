@@ -1,0 +1,41 @@
+@use "../global" as global;
+
+.p-AboutProfile {
+  width: 81.99%;
+  margin: 0 auto;
+  max-width: 1120px;
+
+  &__table {
+    margin: 32px auto 0;
+    font-size: 16px;
+
+    table {
+      width: 100%;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid #e0e0d6;
+      border-collapse: collapse;
+    }
+
+    th {
+      background: #acaca1;
+      color: global.$accent-color;
+      width: 300px;
+      padding: 18px 0 18px 41px;
+      text-align: left;
+    }
+    td {
+      width: calc(100% - 300px);
+      padding-left: 30px;
+      letter-spacing: -0.01em;
+
+      span {
+        font-size: 20px;
+        padding-right: 4px;
+      }
+    }
+  }
+}
