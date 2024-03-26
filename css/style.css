@@ -232,6 +232,32 @@ a:hover {
   color: #fff;
 }
 
+.c-submit__btn {
+  width: 300px;
+  height: 64px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.c-submit__btn:hover {
+  opacity: 0.8;
+}
+
+.back {
+  background: #fff;
+  color: #343434;
+}
+
+.send {
+  background: #343434;
+  color: #fff;
+}
+
 .p-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2015,12 +2041,12 @@ a:hover {
   color: #acaca1;
   background: #fff;
 }
-.p-contactForm__list p:nth-child(1) {
-  background: #ffdb00;
-  color: #343434;
-}
 .p-contactForm__list p:last-child {
   margin-right: 0;
+}
+.p-contactForm__list .active {
+  background: #ffdb00;
+  color: #343434;
 }
 
 .p-contactForm__form dl {
@@ -2189,6 +2215,97 @@ a:hover {
 .p-contactForm__personal-info p:nth-child(2) {
   text-align: left;
   font-size: 15px;
+}
+
+.p-confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.p-confirm dl {
+  width: 100%;
+  margin: 0;
+  padding: 27px 0 18px 0;
+  float: left;
+  max-width: 100vw;
+  border-top: 1px solid #e0e0d6;
+}
+.p-confirm dl:nth-child(5) {
+  padding: 25px 0 36px 0;
+}
+.p-confirm dl:nth-child(6) {
+  padding: 25px 0 25px 0;
+}
+.p-confirm dl:last-of-type {
+  border-bottom: 1px solid #e0e0d6;
+  margin-bottom: 60px;
+}
+.p-confirm dt {
+  width: 320px;
+  padding: 9px 4% 11px 4%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+.p-confirm dt span {
+  font-size: 12px;
+  color: #b42e27;
+  border: 1px solid #b42e27;
+  padding: 3px 5px;
+}
+.p-confirm dd {
+  width: calc(100% - 320px);
+  float: right;
+  font-size: 15px;
+}
+.p-confirm dd p {
+  text-align: left;
+  width: 88%;
+}
+
+.p-confirm__address .post {
+  margin-top: 10px;
+}
+.p-confirm__address .address-level1 {
+  margin-top: 10px;
+}
+.p-confirm__address .address-level2 {
+  margin-top: 18px;
+}
+.p-confirm__address .address-level3 {
+  margin-top: 22px;
+}
+
+.c-submit__btn-wrap {
+  text-align: center;
+  margin-top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.c-submit__btn-wrap .c-submit__btn {
+  margin-right: 40px;
+}
+.c-submit__btn-wrap .c-submit__btn:last-child {
+  margin-right: 0;
 }
 
 @media screen and (min-width: 1024px) {

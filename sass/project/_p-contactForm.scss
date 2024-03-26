@@ -30,14 +30,13 @@
       color: #acaca1;
       background: #fff;
 
-      &:nth-child(1) {
-        background: global.$main-color;
-        color: global.$text-color;
-      }
-
       &:last-child {
         margin-right: 0;
       }
+    }
+    .active {
+      background: global.$main-color;
+      color: global.$text-color;
     }
   }
 }
