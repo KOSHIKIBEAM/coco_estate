@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'svz0ahl',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document); 
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="l-header">
+        <div class="p-header">
+            <div class="p-header__logo"><img src="/img/header/header_logo.png" alt="logo"></div>
+            <nav class="p-header__nav u-hidden-p-tab u-hidden-sp">
+                <ul>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#search">
+                            <span class="p-header-nav__link">物件情報</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#flow">
+                            <span class="p-header-nav__link">取引のながれ</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#q&a">
+                            <span class="p-header-nav__link">よくある質問</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#about">
+                            <span class="p-header-nav__link">私たちについて</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#access">
+                            <span class="p-header-nav__link">アクセス</span>
+                        </a>
+                    </li>
+                    <li class="p-header-nav__btn" role="listitem">
+                        <a class="header-nav__button" href="#">
+                            <img src="/img/header/header_mail.svg" alt="">
+                            <span class="p-header-nav__contact">CONTACT</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-drawer">
+                <button id="menu-icon" class="p-drawer__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="menu-panel" class="p-drawer__panel">
+                    <ul class="p-drawer__panel-list">
+                        <li><a href="#search">物件情報</a></li>
+                        <li><a href="#flow">取引のながれ</a></li>
+                        <li><a href="#q&a">よくある質問</a></li>
+                        <li><a href="#about">私たちについて</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="l-contactFv" id="about">
+        <div class="p-contactFv">
+            <div class="p-contactFv__breadcrumb">
+                <p>TOP</p>
+                <p>お問い合わせ</p>
+            </div>
+            <div class="p-contactFv__wrap">
+                <div class="p-contactFv__ttl">
+                    <h1>CONTACT</h1>
+                    <p>お問い合わせ</p>
+                </div>
+                <div class="p-contactFv__img"><img src="/img/contact/contactFv.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="p-contactFv__text-wrap">
+            <div class="p-contactFv__text">
+                <p>お急ぎの場合は、直通電話をご利用ください。</p>
+                <p>054-204-3017</p>
+                <p>【　受付時間　】　00:00 ~ 00:00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="l-contactForm" id="contact">
+        <div class="p-contactForm">
+            <div class="p-contactForm__ttl">
+                <h2>お問い合わせフォーム</h2>
+                <p>以下のフォームに入力いただきご確認ください。</p>
+            </div>
+            <div class="p-contactForm__list">
+                <p>【STEP１】 入力</p>
+                <p>【STEP２】 確認</p>
+                <p>【STEP３】 完了</p>
+            </div>
+            <form class="p-contactForm__form">
+                <dl>
+                    <dt>
+                        <p>お名前</p><span>必須</span>
+                    </dt>
+                    <dd>
+                        <input type="text" name="name" autocomplete="name" placeholder="例：山田　太郎" required />
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <p>フリガナ</p><span>必須</span>
+                    </dt>
+                    <dd>
+                        <input type="text" value="" placeholder="例：ヤマダ　タロウ" required>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <p>メールアドレス</p><span>必須</span>
+                    </dt>
+                    <dd>
+                        <input class="" type="email" placeholder="例：sample@example.com" autocomplete="email" required>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <p>電話番号</p><span>必須</span>
+                    </dt>
+                    <dd>
+                        <input type="tel" name="tel" placeholder="例：0123-456-7890" pattern="\d{2,4}-\d{2,4}-\d{3,4}"
+                            maxlength="13" required>
+                    </dd>
+                </dl>
+                <dl class="p-contactForm__address">
+                    <dt>
+                        <p>住所</p><span>必須</span>
+                    </dt>
+                    <dd>
+                        <div class="post">
+                            <p>〒</p>
+                            <input type="text" autocomplete="postal-code" required>
+                            <p>半角数字7桁(ハイフンなし)</p>
+                        </div>
+                        <div class="address-level1">
+                            <p>都道府県</p>
+                            <select name="pref" required>
+                                <option value="" selected></option>
+                                <option value="1">北海道</option>
+                                <option value="2">青森県</option>
+                                <option value="3">岩手県</option>
+                                <option value="4">宮城県</option>
+                                <option value="5">秋田県</option>
+                                <option value="6">山形県</option>
+                                <option value="7">福島県</option>
+                                <option value="8">茨城県</option>
+                                <option value="9">栃木県</option>
+                                <option value="10">群馬県</option>
+                                <option value="11">埼玉県</option>
+                                <option value="12">千葉県</option>
+                                <option value="13">東京都</option>
+                                <option value="14">神奈川県</option>
+                                <option value="15">新潟県</option>
+                                <option value="16">富山県</option>
+                                <option value="17">石川県</option>
+                                <option value="18">福井県</option>
+                                <option value="19">山梨県</option>
+                                <option value="20">長野県</option>
+                                <option value="21">岐阜県</option>
+                                <option value="22">静岡県</option>
+                                <option value="23">愛知県</option>
+                                <option value="24">三重県</option>
+                                <option value="25">滋賀県</option>
+                                <option value="26">京都府</option>
+                                <option value="27">大阪府</option>
+                                <option value="28">兵庫県</option>
+                                <option value="29">奈良県</option>
+                                <option value="30">和歌山県</option>
+                                <option value="31">鳥取県</option>
+                                <option value="32">島根県</option>
+                                <option value="33">岡山県</option>
+                                <option value="34">広島県</option>
+                                <option value="35">山口県</option>
+                                <option value="36">徳島県</option>
+                                <option value="37">香川県</option>
+                                <option value="38">愛媛県</option>
+                                <option value="39">高知県</option>
+                                <option value="40">福岡県</option>
+                                <option value="41">佐賀県</option>
+                                <option value="42">長崎県</option>
+                                <option value="43">熊本県</option>
+                                <option value="44">大分県</option>
+                                <option value="45">宮崎県</option>
+                                <option value="46">鹿児島県</option>
+                                <option value="47">沖縄県</option>
+                            </select>
+                        </div>
+                        <div class="address-level2">
+                            <p>市区町村</p>
+                            <input type="text" placeholder="例：静岡市駿河区小黒3-1-35" autocomplete="address-level2" required>
+                        </div>
+                        <div class="address-level3">
+                            <p>建物名・部屋番号</p>
+                            <input type="text" placeholder="例：○○ビル 201" required>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <p>お問い合わせ内容</p><span>必須</span>
+                    </dt>
+                    <dd>
+                        <textarea required></textarea>
+                    </dd>
+                </dl>
+                <div class="agree">
+                    <label><input type="checkbox" name="" required>個人情報保護方針に同意します。</label>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="送信内容を確認する">
+                </div>
+            </form>
+            <div class="p-contactForm__personal-info">
+                <p>個人情報のお取り扱いについて</p>
+                <p>入力された個人情報は、当社からのご連絡・資料発送・各種イベント等の連絡を目的で収集するものであり、原則として、本人の承諾なく第三者に開示・提供いたしません。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="l-footer" id="footer">
+        <div class="p-footer">
+            <div class="p-footer__top">
+                <div class="p-footer__top-mail">
+                    <p>CONTACT</p>
+                </div>
+                <div class="p-footer__top-tel">
+                    <div class="p-footer__top-tel-txt">
+                        <p>054-204-3017</p>
+                        <p>[ 受付時間 ] 0:00 ~ 00:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-footer__bottom">
+                <div class="p-footer__bottom-left">
+                    <div class="p-footer__bottom-left-img"><img src="/img/footer/footer-logo.png" alt=""></div>
+                    <p>〒422-8072 静岡市駿河区小黒3-1-35<br>
+                        TEL：054-204-3017<br>
+                        FAX：054-204-3018</p>
+                </div>
+                <div class="p-footer__bottom-right">
+                    <ul>
+                        <li><a href="#">物件情報</a></li>
+                        <li><a href="#">取引のながれ</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                        <li class="p-footer__bottom-right-about"><a href="#">私たちについて</a>
+                            <ul>
+                                <li><a href="#">ー 事業案内
+                                    </a></li>
+                                <li><a href="#">ー 会社情報
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">アクセス</a></li>
+                    </ul>
+                    <p class="copylight">© COCO-ESTATE Co.,Ltd. All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/drawer.js"></script>
+    <script src="/js/tab.js"></script>
+    <script src="/js/accordion.js"></script>
+</body>
+
+</html>
