@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'svz0ahl',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document); 
+    </script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="l-header">
+        <div class="p-header">
+            <div class="p-header__logo"><img src="/img/header/header_logo.png" alt="logo"></div>
+            <nav class="p-header__nav u-hidden-p-tab u-hidden-sp">
+                <ul>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#search">
+                            <span class="p-header-nav__link">物件情報</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#flow">
+                            <span class="p-header-nav__link">取引のながれ</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#q&a">
+                            <span class="p-header-nav__link">よくある質問</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#about">
+                            <span class="p-header-nav__link">私たちについて</span>
+                        </a>
+                    </li>
+                    <li class="p-header__nav-item" role="listitem">
+                        <a href="#access">
+                            <span class="p-header-nav__link">アクセス</span>
+                        </a>
+                    </li>
+                    <li class="p-header-nav__btn" role="listitem">
+                        <a class="header-nav__button" href="#">
+                            <img src="/img/header/header_mail.svg" alt="">
+                            <span class="p-header-nav__contact">CONTACT</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-drawer">
+                <button id="menu-icon" class="p-drawer__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="menu-panel" class="p-drawer__panel">
+                    <ul class="p-drawer__panel-list">
+                        <li><a href="#search">物件情報</a></li>
+                        <li><a href="#flow">取引のながれ</a></li>
+                        <li><a href="#q&a">よくある質問</a></li>
+                        <li><a href="#about">私たちについて</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="l-contactFv" id="about">
+        <div class="p-contactFv">
+            <div class="p-contactFv__breadcrumb">
+                <p>TOP</p>
+                <p>お問い合わせ</p>
+            </div>
+            <div class="p-contactFv__wrap">
+                <div class="p-contactFv__ttl">
+                    <h1>CONTACT</h1>
+                    <p>お問い合わせ</p>
+                </div>
+                <div class="p-contactFv__img"><img src="/img/contact/contactFv.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="p-contactFv__text-wrap">
+            <div class="p-contactFv__text">
+                <p>お急ぎの場合は、直通電話をご利用ください。</p>
+                <p>054-204-3017</p>
+                <p>【　受付時間　】　00:00 ~ 00:00</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="l-contactForm" id="contact">
+        <div class="p-contactForm">
+            <div class="p-contactForm__ttl">
+                <h2>お問い合わせが完了いたしました。</h2>
+            </div>
+            <div class="p-contactForm__list p-complete__list">
+                <p>【STEP１】 入力</p>
+                <p>【STEP２】 確認</p>
+                <p class="active">【STEP３】 完了</p>
+            </div>
+            <div class="p-complete">
+                <div class="p-complete__txt">
+                    <p>この度は、お問い合わせいただき有り難うございます。</p>
+                    <p>確認のため、自動返信メールをお送りいたします。</p><br>
+                    <p>お問い合わせ内容を確認後、担当者より追ってご連絡させていただきます。</p>
+                </div>
+                <div class="p-complete__attention">
+                    <p>注意事項</p>
+                    <p>自動返信メールが届かない場合は迷惑メールやゴミ箱に振り分けられている場合がございますので、一度ご確認ください。</p>
+                </div>
+            </div>
+        </div>
+        <div class="c-submit__btn-wrap complete__btn">
+            <input class="c-submit__btn send" type="submit" value="TOPへ戻る">
+        </div>
+    </section>
+
+    <footer class="l-footer" id="footer">
+        <div class="p-footer">
+            <div class="p-footer__top">
+                <div class="p-footer__top-mail">
+                    <p>CONTACT</p>
+                </div>
+                <div class="p-footer__top-tel">
+                    <div class="p-footer__top-tel-txt">
+                        <p>054-204-3017</p>
+                        <p>[ 受付時間 ] 0:00 ~ 00:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-footer__bottom">
+                <div class="p-footer__bottom-left">
+                    <div class="p-footer__bottom-left-img"><img src="/img/footer/footer-logo.png" alt=""></div>
+                    <p>〒422-8072 静岡市駿河区小黒3-1-35<br>
+                        TEL：054-204-3017<br>
+                        FAX：054-204-3018</p>
+                </div>
+                <div class="p-footer__bottom-right">
+                    <ul>
+                        <li><a href="#">物件情報</a></li>
+                        <li><a href="#">取引のながれ</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                        <li class="p-footer__bottom-right-about"><a href="#">私たちについて</a>
+                            <ul>
+                                <li><a href="#">ー 事業案内
+                                    </a></li>
+                                <li><a href="#">ー 会社情報
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">アクセス</a></li>
+                    </ul>
+                    <p class="copylight">© COCO-ESTATE Co.,Ltd. All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/drawer.js"></script>
+    <script src="/js/tab.js"></script>
+    <script src="/js/accordion.js"></script>
+</body>
+
+</html>
