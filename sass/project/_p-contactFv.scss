@@ -1,0 +1,138 @@
+@use "../global" as global;
+
+.p-contactFv {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 683px;
+    height: 520px;
+    background: global.$main-color;
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  &__breadcrumb {
+    display: flex;
+    padding-top: 21px;
+    padding-left: 123px;
+
+    p {
+      color: global.$text-color;
+      font-size: 13px;
+      margin-right: 22px;
+      position: relative;
+
+      &::before {
+        content: ">";
+        position: absolute;
+        top: 50%;
+        right: -19px;
+        font-size: 14px;
+        transform: translate(-50%, -50%);
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 19px;
+  }
+
+  &__ttl {
+    text-align: left;
+    font-family: global.$ff-mont;
+    margin-right: -2%;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 60px;
+      line-height: calc(80 / 60);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+    p {
+      font-size: 20px;
+      line-height: calc(40 / 20);
+      font-weight: bold;
+    }
+  }
+  &__img {
+    width: 960px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    width: 720px;
+    padding: 29px 0 40px;
+    margin: 0 auto;
+    border: 10px solid #e0e0d6;
+    text-align: center;
+
+    p {
+      &:nth-child(1) {
+        font-size: 22px;
+      }
+      &:nth-child(2) {
+        font-size: 54px;
+        font-family: global.$ff-mont;
+        font-weight: 500;
+        display: inline-block;
+        position: relative;
+        margin-left: 83px;
+        letter-spacing: 0.02em;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -14%;
+          z-index: 1;
+          transform: translate(-50%, -50%);
+        }
+
+        &::before {
+          background: url(/img/footer/icon-tel.svg) no-repeat center
+            center/cover;
+          width: 32px;
+          height: 32px;
+          z-index: 2;
+        }
+
+        &::after {
+          width: 62px;
+          height: 62px;
+          background: global.$main-color;
+          border-radius: 50%;
+        }
+      }
+      &:nth-child(3) {
+        width: 320px;
+        margin: 4px auto 0;
+        padding: 9px 0;
+        border-top: 1px solid #acaca1;
+        border-bottom: 1px solid #acaca1;
+      }
+    }
+  }
+}
+
+.p-contactFv__text-wrap {
+  padding: 100px 0;
+}
