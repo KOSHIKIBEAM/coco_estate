@@ -36,11 +36,31 @@
       width: 300px;
       padding: 18px 0 18px 41px;
       text-align: left;
+
+      @include global.mq("tab") {
+        padding: 20px 0;
+        width: 200px;
+        text-align: center;
+      }
+      @include global.mq("sp") {
+        padding: 10px 0;
+        width: 100px;
+        text-align: center;
+      }
     }
     td {
       width: calc(100% - 300px);
       padding-left: 30px;
       letter-spacing: -0.01em;
+
+      @include global.mq("tab") {
+        width: calc(100% - 100px);
+        padding: 20px;
+      }
+      @include global.mq("sp") {
+        width: calc(100% - 100px);
+        padding: 10px;
+      }
 
       span {
         font-size: 20px;

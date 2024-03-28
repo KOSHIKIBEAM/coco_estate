@@ -64,3 +64,26 @@
     }
   }
 }
+.p-AboutProfile {
+  .c-section__ttl {
+    h2 {
+      @include global.mq("tab") {
+        font-size: 30px;
+      }
+
+      @include global.mq("sp") {
+        font-size: 20px;
+        padding: 0 8px 0 14px;
+      }
+    }
+    p {
+      @include global.mq("tab") {
+        font-size: 14px;
+      }
+
+      @include global.mq("sp") {
+        font-size: 12px;
+      }
+    }
+  }
+}

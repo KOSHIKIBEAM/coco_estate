@@ -5,17 +5,11 @@ $('a[href*="#"]').click(function () {
   return false;
 });
 
-const intersectionObserver = new IntersectionObserver(function (entries) {
-  entries.forEach(function (entry) {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("is-in-view");
-    } else {
-      // entry.target.classList.remove("is-in-view");
-    }
-  });
-});
+var ua = navigator.userAgent.toLowerCase();
+var isMobile = /iphone/.test(ua) || /android(.+)?mobile/.test(ua);
 
-const inViewItems = document.querySelectorAll(".js-in-view");
-inViewItems.forEach(function (inViewItem) {
-  intersectionObserver.observe(inViewItem);
-});
+if (!isMobile) {
+  $('a[href^="tel:"]').on("click", function (e) {
+    e.preventDefault();
+  });
+}
