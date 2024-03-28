@@ -3867,13 +3867,13 @@ a:hover {
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .p-contactForm__ttl h2 {
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 599px) {
   .p-contactForm__ttl h2 {
-    font-size: 23px;
+    font-size: 18px;
     margin-bottom: 15px;
   }
 }
@@ -4483,27 +4483,42 @@ a:hover {
   line-height: 1.7777777778;
   margin-bottom: 54px;
 }
+@media screen and (max-width: 599px) {
+  .p-complete__txt {
+    font-size: 15px;
+  }
+}
 .p-complete__attention p:nth-child(1) {
   font-size: 20px;
   color: #acaca1;
-  padding-bottom: 18px;
+  margin-bottom: 18px;
   position: relative;
 }
 .p-complete__attention p:nth-child(1)::before, .p-complete__attention p:nth-child(1)::after {
   content: "";
-  width: 36%;
+  width: 33%;
   height: 1px;
   background: #acaca1;
   position: absolute;
   top: 46%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-complete__attention p:nth-child(1)::before, .p-complete__attention p:nth-child(1)::after {
+    width: 27%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-complete__attention p:nth-child(1)::before, .p-complete__attention p:nth-child(1)::after {
+    width: 21%;
+  }
 }
 .p-complete__attention p:nth-child(1)::before {
-  left: 26%;
+  left: 8%;
 }
 .p-complete__attention p:nth-child(1)::after {
-  right: -10%;
+  right: 8%;
 }
 .p-complete__attention p:nth-child(2) {
   font-size: 15px;
@@ -4519,6 +4534,19 @@ a:hover {
 
 .complete__btn {
   margin-top: 54px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .complete__btn {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .complete__btn {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
