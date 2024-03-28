@@ -14,5 +14,14 @@
     right: 0;
     transform: translate(0%, 0%);
     z-index: -1;
+
+    @include global.mq("tab") {
+      width: 40%;
+      height: 18%;
+    }
+    @include global.mq("sp") {
+      width: 40%;
+      height: 18%;
+    }
   }
 }
