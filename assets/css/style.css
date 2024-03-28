@@ -4314,35 +4314,81 @@ a:hover {
 .p-confirm dl {
   width: 100%;
   margin: 0;
-  padding: 27px 0 18px 0;
-  float: left;
   max-width: 100vw;
   border-top: 1px solid #e0e0d6;
+  padding: 15px 0 12px;
+}
+@media screen and (min-width: 1024px) {
+  .p-confirm dl {
+    float: left;
+    padding: 25px 0 18px 0;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-confirm dl {
+    float: left;
+    padding: 25px 0 18px 0;
+  }
 }
 .p-confirm dl:nth-child(5) {
-  padding: 25px 0 36px 0;
+  padding: 25px 0 22px 0;
+}
+@media screen and (max-width: 599px) {
+  .p-confirm dl:nth-child(5) {
+    padding: 15px 0 12px;
+  }
 }
 .p-confirm dl:nth-child(6) {
   padding: 25px 0 25px 0;
+}
+@media screen and (max-width: 599px) {
+  .p-confirm dl:nth-child(6) {
+    padding: 15px 0 12px;
+  }
 }
 .p-confirm dl:last-of-type {
   border-bottom: 1px solid #e0e0d6;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-confirm dl:last-of-type {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-confirm dl:last-of-type {
+    margin-bottom: 30px;
+  }
+}
 .p-confirm dt {
-  width: 320px;
-  padding: 9px 4% 11px 4%;
-  float: left;
+  padding: 0px 4% 11px 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 15px;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .p-confirm dt {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    float: left;
+    width: 320px;
+    padding: 9px 4% 11px 4%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-confirm dt {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    float: left;
+    width: 320px;
+    padding: 9px 4% 11px 4%;
+  }
 }
 .p-confirm dt span {
   font-size: 12px;
@@ -4350,14 +4396,28 @@ a:hover {
   border: 1px solid #b42e27;
   padding: 3px 5px;
 }
-.p-confirm dd {
-  width: calc(100% - 320px);
-  float: right;
-  font-size: 15px;
+@media screen and (max-width: 599px) {
+  .p-confirm dt span {
+    margin-left: 10px;
+  }
 }
-.p-confirm dd p {
-  text-align: left;
-  width: 88%;
+.p-confirm dd {
+  width: 95%;
+  margin-left: 5%;
+}
+@media screen and (min-width: 1024px) {
+  .p-confirm dd {
+    width: calc(100% - 320px);
+    float: right;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-confirm dd {
+    width: calc(100% - 320px);
+    float: right;
+    margin-left: 0;
+  }
 }
 
 .p-confirm__address .post {
@@ -4386,8 +4446,24 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 599px) {
+  .c-submit__btn-wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 .c-submit__btn-wrap .c-submit__btn {
   margin-right: 40px;
+}
+@media screen and (max-width: 599px) {
+  .c-submit__btn-wrap .c-submit__btn {
+    width: 120px;
+    margin-right: 0;
+    font-size: 15px;
+  }
 }
 .c-submit__btn-wrap .c-submit__btn:last-child {
   margin-right: 0;
