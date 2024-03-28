@@ -20,11 +20,11 @@
 
     img {
       @include global.mq("tab") {
-        width: 160px;
+        width: 260px;
       }
 
       @include global.mq("sp") {
-        width: 160px;
+        width: 190px;
       }
     }
   }
@@ -43,18 +43,38 @@
 
       &:nth-child(1) {
         padding-right: 49px;
+
+        @media screen and (min-width: 1023px) and (max-width: 1145px) {
+          padding-right: 20px;
+        }
       }
       &:nth-child(2) {
         padding-right: 31px;
+
+        @media screen and (min-width: 1023px) and (max-width: 1145px) {
+          padding-right: 20px;
+        }
       }
       &:nth-child(3) {
         padding-right: 40px;
+
+        @media screen and (min-width: 1023px) and (max-width: 1145px) {
+          padding-right: 20px;
+        }
       }
       &:nth-child(4) {
         padding-right: 40px;
+
+        @media screen and (min-width: 1023px) and (max-width: 1145px) {
+          padding-right: 20px;
+        }
       }
       &:nth-child(5) {
         padding-right: 40px;
+
+        @media screen and (min-width: 1023px) and (max-width: 1145px) {
+          padding-right: 20px;
+        }
       }
 
       a {
