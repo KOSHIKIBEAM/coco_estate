@@ -3,4 +3,11 @@
 .l-TopAbout {
   text-align: center;
   padding: 0 0 111px;
+
+  @include global.mq("tab") {
+    padding: 0 0 70px;
+  }
+  @include global.mq("sp") {
+    padding: 0 0 50px;
+  }
 }

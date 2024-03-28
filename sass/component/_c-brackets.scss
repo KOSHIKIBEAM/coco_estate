@@ -1,0 +1,260 @@
+@use "../global" as global;
+
+.c-brackets {
+  padding: 0px 20px;
+  position: relative;
+
+  @include global.mq("tab") {
+    padding: 0px 15px;
+  }
+
+  @include global.mq("sp") {
+    padding: 0px 10px;
+  }
+
+  .c-brackets__inner {
+    text-align: center;
+    font-weight: 700;
+    color: global.$main-color;
+  }
+
+  &:before,
+  &:after,
+  .c-brackets__inner:before,
+  .c-brackets__inner:after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+
+    @include global.mq("tab") {
+      width: 12px;
+      height: 12px;
+    }
+
+    @include global.mq("sp") {
+      width: 9px;
+      height: 9px;
+    }
+  }
+
+  &:before {
+    border-left: solid 5px global.$main-color;
+    border-top: solid 5px global.$main-color;
+    top: 11px;
+    left: 0;
+
+    @include global.mq("tab") {
+      border-left: solid 3px global.$main-color;
+      border-top: solid 3px global.$main-color;
+      top: 11px;
+      left: 0;
+    }
+
+    @include global.mq("sp") {
+      border-left: solid 3px global.$main-color;
+      border-top: solid 3px global.$main-color;
+      top: 8px;
+      left: 0;
+    }
+  }
+
+  &:after {
+    border-right: solid 5px global.$main-color;
+    border-top: solid 5px global.$main-color;
+    top: 11px;
+    right: 0;
+
+    @include global.mq("tab") {
+      border-right: solid 3px global.$main-color;
+      border-top: solid 3px global.$main-color;
+      top: 11px;
+      right: 0;
+    }
+
+    @include global.mq("sp") {
+      border-right: solid 3px global.$main-color;
+      border-top: solid 3px global.$main-color;
+      top: 8px;
+      right: 0;
+    }
+  }
+
+  .c-brackets__inner:before {
+    border-left: solid 5px global.$main-color;
+    border-bottom: solid 5px global.$main-color;
+    bottom: 4px;
+    left: 0;
+
+    @include global.mq("tab") {
+      border-left: solid 3px global.$main-color;
+      border-bottom: solid 3px global.$main-color;
+      bottom: 4px;
+      left: 0;
+    }
+
+    @include global.mq("sp") {
+      border-left: solid 3px global.$main-color;
+      border-bottom: solid 3px global.$main-color;
+      bottom: 4px;
+      left: 0;
+    }
+  }
+  .c-brackets__inner:after {
+    border-right: solid 5px global.$main-color;
+    border-bottom: solid 5px global.$main-color;
+    bottom: 4px;
+    right: 0;
+
+    @include global.mq("tab") {
+      border-right: solid 3px global.$main-color;
+      border-bottom: solid 3px global.$main-color;
+      bottom: 4px;
+      right: 0;
+    }
+
+    @include global.mq("sp") {
+      border-right: solid 3px global.$main-color;
+      border-bottom: solid 3px global.$main-color;
+      bottom: 4px;
+      right: 0;
+    }
+  }
+}
+
+.c-brackets__small {
+  padding: 0px 5px 0 10px;
+  margin-right: 5px;
+  position: relative;
+
+  @include global.mq("tab") {
+    padding: 0px 5px 0 10px;
+    margin-right: 5px;
+  }
+  @include global.mq("sp") {
+    padding: 0px 5px 0 5px;
+    margin-right: 5px;
+  }
+
+  .c-brackets__inner {
+    text-align: center;
+    font-weight: 700;
+    color: global.$main-color;
+  }
+
+  &:before,
+  &:after,
+  .c-brackets__inner:before,
+  .c-brackets__inner:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+
+    @include global.mq("tab") {
+      width: 6px;
+      height: 6px;
+    }
+    @include global.mq("sp") {
+      width: 4px;
+      height: 4px;
+    }
+  }
+
+  &:before {
+    border-left: solid 2px global.$main-color;
+    border-top: solid 2px global.$main-color;
+    top: 4px;
+    left: 0;
+
+    @include global.mq("tab") {
+      border-left: solid 2px global.$main-color;
+      border-top: solid 2px global.$main-color;
+      top: 2px;
+      left: 0;
+    }
+    @include global.mq("sp") {
+      border-left: solid 2px global.$main-color;
+      border-top: solid 2px global.$main-color;
+      top: 2px;
+      left: 0;
+    }
+  }
+
+  &:after {
+    border-right: solid 2px global.$main-color;
+    border-top: solid 2px global.$main-color;
+    top: 4px;
+    right: 0;
+
+    @include global.mq("tab") {
+      border-right: solid 2px global.$main-color;
+      border-top: solid 2px global.$main-color;
+      top: 2px;
+      right: 0;
+    }
+    @include global.mq("sp") {
+      border-right: solid 2px global.$main-color;
+      border-top: solid 2px global.$main-color;
+      top: 2px;
+      right: 0;
+    }
+  }
+
+  .c-brackets__inner:before {
+    border-left: solid 2px global.$main-color;
+    border-bottom: solid 2px global.$main-color;
+    bottom: 4px;
+    left: 0;
+
+    @include global.mq("tab") {
+      border-left: solid 2px global.$main-color;
+      border-bottom: solid 2px global.$main-color;
+      bottom: 1px;
+      left: 0;
+    }
+    @include global.mq("sp") {
+      border-left: solid 2px global.$main-color;
+      border-bottom: solid 2px global.$main-color;
+      bottom: 1px;
+      left: 0;
+    }
+  }
+  .c-brackets__inner:after {
+    border-right: solid 2px global.$main-color;
+    border-bottom: solid 2px global.$main-color;
+    bottom: 4px;
+    right: 0;
+
+    @include global.mq("tab") {
+      border-right: solid 2px global.$main-color;
+      border-bottom: solid 2px global.$main-color;
+      bottom: 1px;
+      right: 0;
+    }
+    @include global.mq("sp") {
+      border-right: solid 2px global.$main-color;
+      border-bottom: solid 2px global.$main-color;
+      bottom: 1px;
+      right: 0;
+    }
+  }
+}
+
+.p-TopAbout__wrap-text {
+  .c-brackets__small {
+    padding: 0px 5px 0 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+
+    &:before,
+    &:after,
+    .c-brackets__inner:before,
+    .c-brackets__inner:after {
+      @include global.mq("sp") {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}

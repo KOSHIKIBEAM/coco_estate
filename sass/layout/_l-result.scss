@@ -3,4 +3,11 @@
 .l-result {
   padding: 0 0 94px;
   text-align: center;
+
+  @include global.mq("tab") {
+    padding: 0 0 70px;
+  }
+  @include global.mq("sp") {
+    padding: 0 0 50px;
+  }
 }

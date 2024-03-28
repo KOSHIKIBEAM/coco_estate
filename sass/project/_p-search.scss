@@ -5,10 +5,27 @@
   margin: 0 auto;
   max-width: 1120px;
 
+  @include global.mq("tab") {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  @include global.mq("sp") {
+    width: 100%;
+    padding: 0 15px;
+  }
+
   &__btn {
     display: flex;
     align-items: center;
     margin-top: 23px;
+
+    @include global.mq("tab") {
+      flex-flow: column;
+    }
+    @include global.mq("sp") {
+      flex-flow: column;
+    }
   }
   &__btn-buy,
   &__btn-borrow {
@@ -16,6 +33,13 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+
+    @include global.mq("tab") {
+      width: 80%;
+    }
+    @include global.mq("sp") {
+      width: 100%;
+    }
 
     & > p {
       font-size: 16px;
@@ -29,10 +53,18 @@
     }
   }
   &__btn-buy {
-    margin-right: 47px;
-    flex-grow: 1;
-  }
-  &__btn-borrow {
+    @include global.mq("pc") {
+      margin-right: 47px;
+      flex-grow: 1;
+    }
+
+    @include global.mq("tab") {
+      margin-bottom: 30px;
+    }
+
+    @include global.mq("sp") {
+      margin-bottom: 20px;
+    }
   }
 
   .p-search__btn-buy-btn,
@@ -43,6 +75,13 @@
     display: flex;
     align-items: center;
 
+    @include global.mq("tab") {
+      flex-flow: column;
+    }
+    @include global.mq("sp") {
+      flex-flow: column;
+    }
+
     a {
       font-size: 15px;
       background: #f2f2ed;
@@ -51,6 +90,16 @@
       border: 1px solid #d3d3c7;
       font-weight: normal;
 
+      @include global.mq("tab") {
+        width: 100%;
+        text-align: center;
+      }
+
+      @include global.mq("sp") {
+        width: 100%;
+        text-align: center;
+      }
+
       span {
         font-size: 13px;
       }
@@ -58,47 +107,29 @@
   }
   .p-search__btn-buy-btn {
     a {
-      margin-right: 12px;
+      @include global.mq("pc") {
+        margin-right: 12px;
 
-      &:last-child {
-        margin-right: 0;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      @include global.mq("tab") {
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include global.mq("sp") {
+        margin-bottom: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
-  }
-  .p-search__btn-borrow-btn {
-  }
-}
-
-.p-search__result {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.p-search__result-item {
-  width: calc(100% / 3 - 48px * 2 / 3);
-  margin-right: 48px;
-  margin-top: 48px;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(-n + 3) {
-    margin-top: 80px;
-  }
-
-  &-body {
-  }
-  &-img {
-    img {
-    }
-  }
-  &-cate {
-  }
-  &-address {
-  }
-  &-price {
-  }
-  &-access {
   }
 }
