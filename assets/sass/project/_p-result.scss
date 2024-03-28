@@ -91,7 +91,8 @@
 
     &::before {
       content: "";
-      background: url(/img/search/icon.svg) no-repeat center center/cover;
+      background: url(./assets/img/search/icon.svg) no-repeat center
+        center/cover;
       width: 11px;
       height: 17px;
       position: absolute;
@@ -125,7 +126,8 @@
     top: 50%;
     right: 2%;
     transform: translate(-50%, -50%);
-    background: url(/img/result/button-icon.svg) no-repeat center center/contain;
+    background: url(./assets/img/result/button-icon.svg) no-repeat center
+      center/contain;
     width: 24px;
     height: 24px;
   }

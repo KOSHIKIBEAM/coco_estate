@@ -50,7 +50,8 @@
 
     &::before {
       content: "";
-      background: url(/img/footer/icon-mail.svg) no-repeat center center/cover;
+      background: url(./assets/img/footer/icon-mail.svg) no-repeat center
+        center/cover;
       width: 26px;
       height: 18px;
       position: absolute;
@@ -59,14 +60,14 @@
       transform: translate(-50%, -50%);
 
       @include global.mq("tab") {
-        background: url(/img/footer/icon-mail.svg) no-repeat center center /
-          contain;
+        background: url(./assets/img/footer/icon-mail.svg) no-repeat center
+          center / contain;
         width: 18px;
       }
 
       @include global.mq("sp") {
-        background: url(/img/footer/icon-mail.svg) no-repeat center center /
-          contain;
+        background: url(./assets/img/footer/icon-mail.svg) no-repeat center
+          center / contain;
         width: 14px;
       }
     }
@@ -78,7 +79,8 @@
 
     &::before {
       content: "";
-      background: url(/img/footer/icon-tel.svg) no-repeat center center/contain;
+      background: url(./assets/img/footer/icon-tel.svg) no-repeat center
+        center/contain;
       width: 28px;
       height: 25px;
       position: absolute;

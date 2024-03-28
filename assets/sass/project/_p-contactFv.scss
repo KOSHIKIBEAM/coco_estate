@@ -17,8 +17,18 @@
 
   &__breadcrumb {
     display: flex;
-    padding-top: 21px;
-    padding-left: 123px;
+
+    @include global.mq("pc") {
+      padding-top: 21px;
+      padding-left: 123px;
+    }
+
+    @include global.mq("tab") {
+      padding: 1% 3%;
+    }
+    @include global.mq("sp") {
+      padding: 1% 3%;
+    }
 
     p {
       color: global.$text-color;
@@ -108,7 +118,7 @@
         }
 
         &::before {
-          background: url(/img/footer/icon-tel.svg) no-repeat center
+          background: url(./assets/img/footer/icon-tel.svg) no-repeat center
             center/cover;
           width: 32px;
           height: 32px;
