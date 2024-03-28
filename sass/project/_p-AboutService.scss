@@ -5,6 +5,16 @@
   margin: 0 auto;
   max-width: 1120px;
 
+  @include global.mq("tab") {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  @include global.mq("sp") {
+    width: 100%;
+    padding: 0 15px;
+  }
+
   &__lists {
     display: flex;
     justify-content: space-between;

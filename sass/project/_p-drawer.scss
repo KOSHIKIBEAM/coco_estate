@@ -40,7 +40,7 @@
         &:nth-of-type(1) {
           top: 10px;
           transform: rotate(45deg);
-          background: global.$accent-color;
+          background: global.$text-color;
         }
 
         &:nth-of-type(2) {
@@ -50,7 +50,7 @@
         &:nth-of-type(3) {
           top: 10px;
           transform: rotate(-45deg);
-          background: global.$accent-color;
+          background: global.$text-color;
         }
       }
     }
@@ -80,11 +80,11 @@
 
   li {
     padding: 1.75rem 0;
-    border-bottom: 1px dotted global.$accent-color;
+    border-bottom: 1px dotted global.$text-color;
     position: relative;
 
     &:first-child {
-      border-top: 1px dotted global.$accent-color;
+      border-top: 1px dotted global.$text-color;
     }
 
     &::before {
@@ -102,7 +102,7 @@
 
   a {
     text-decoration: none;
-    color: global.$accent-color;
+    color: global.$text-color;
     font-size: 1rem;
     display: block;
     padding-left: 30px;

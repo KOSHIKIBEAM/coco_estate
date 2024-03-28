@@ -3,4 +3,11 @@
 .l-qa {
   padding: 70px 0 126px;
   text-align: center;
+
+  @include global.mq("tab") {
+    padding: 50px 0 70px;
+  }
+  @include global.mq("sp") {
+    padding: 30px 0 50px;
+  }
 }

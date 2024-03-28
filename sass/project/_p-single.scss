@@ -5,6 +5,16 @@
   margin: 0px auto 80px;
   max-width: 1120px;
 
+  @include global.mq("tab") {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  @include global.mq("sp") {
+    width: 100%;
+    padding: 0 15px;
+  }
+
   &__breadcrumb {
     display: flex;
     padding-top: 21px;

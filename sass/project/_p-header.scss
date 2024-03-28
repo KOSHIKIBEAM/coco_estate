@@ -20,11 +20,11 @@
 
     img {
       @include global.mq("tab") {
-        width: 90px;
+        width: 160px;
       }
 
       @include global.mq("sp") {
-        width: 80px;
+        width: 160px;
       }
     }
   }
