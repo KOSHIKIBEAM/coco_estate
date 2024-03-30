@@ -34,29 +34,29 @@
             <p>事業案内</p>
         </div>
         <div class="p-AboutService__lists">
-            <a href="#" class="p-AboutService__list">
+            <a href="#buy" class="p-AboutService__list">
                 <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img1.png" alt="">
                     <p>買いたい</p>
                 </div>
             </a>
-            <a href="#" class="p-AboutService__list">
+            <a href="#borrow" class="p-AboutService__list">
                 <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img2.png" alt="">
                     <p>借りたい</p>
                 </div>
             </a>
-            <a href="#" class="p-AboutService__list">
+            <a href="#sell" class="p-AboutService__list">
                 <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img3.png" alt="">
                     <p>売りたい</p>
                 </div>
             </a>
-            <a href="#" class="p-AboutService__list">
+            <a href="#consult" class="p-AboutService__list">
                 <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img4.png" alt="">
                     <p>相談したい</p>
                 </div>
             </a>
         </div>
         <div class="p-AboutService__items">
-            <div class="p-AboutService__item">
+            <div id="buy" class="p-AboutService__item">
                 <div class="p-AboutService__item-text">
                     <h3>買いたい</h3>
                     <p><span>土地</span><span>新築</span><span>中古</span><span>事業用</span><span>投資用</span><span>など</span>
@@ -66,7 +66,7 @@
                 <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img1.png" alt="">
                 </div>
             </div>
-            <div class="p-AboutService__item">
+            <div id="borrow" class="p-AboutService__item">
                 <div class="p-AboutService__item-text">
                     <h3>借りたい</h3>
                     <p><span>居住用</span><span>事業用</span><span>駐車場</span><span>など</span></p>
@@ -76,7 +76,7 @@
                 <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img2.png" alt="">
                 </div>
             </div>
-            <div class="p-AboutService__item">
+            <div id="sell" class="p-AboutService__item">
                 <div class="p-AboutService__item-text">
                     <h3>売りたい</h3>
                     <p><span>不動産査定</span><span>など</span></p>
@@ -85,7 +85,7 @@
                 <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img3.png" alt="">
                 </div>
             </div>
-            <div href="#" class="p-AboutService__item">
+            <div id="consult" class="p-AboutService__item">
                 <div class="p-AboutService__item-text">
                     <h3>相談したい</h3>
                     <p><span>相続</span><span>空室対策</span><span>住み替え</span><span>資産運用</span><span>所有物件の賃貸or売却</span><span>住宅ローンの返済シミュレーション</span><span>不動産管理</span><span>など</span>
