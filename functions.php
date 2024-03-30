@@ -7,8 +7,6 @@ function my_script_init() {
 
     wp_enqueue_script("my", get_template_directory_uri() . "/assets/js/swiper.js", array("jquery"), filemtime(get_theme_file_path('/assets/js/swiper.js')), true);
 
-    wp_enqueue_script("my", get_template_directory_uri() . "/assets/js/drawer.js", array("jquery"), filemtime(get_theme_file_path('/assets/js/drawer.js')), true);
-
     wp_enqueue_script("my", get_template_directory_uri() . "/assets/js/tab.js", array("jquery"), filemtime(get_theme_file_path('/assets/js/tab.js')), true);
 }
 add_action("wp_enqueue_scripts", "my_script_init");
