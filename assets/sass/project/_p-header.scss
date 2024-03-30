@@ -78,14 +78,6 @@
         }
       }
 
-      &:nth-child(6) {
-        padding-right: 40px;
-
-        @media screen and (min-width: 1023px) and (max-width: 1145px) {
-          padding-right: 20px;
-        }
-      }
-
       & > a {
         padding-bottom: 3px;
         font-size: 14px;
@@ -104,14 +96,14 @@
   }
 }
 
-.p-header__nav li:nth-child(5) {
+.p-header__nav li:nth-child(4) {
   position: relative;
 
-  &:hover ul {
+  &:hover .sub-menu {
     display: block;
   }
 
-  ul {
+  .sub-menu {
     transition: 1s;
     display: none;
     width: 100%;
@@ -152,42 +144,45 @@
   }
 }
 
-.p-header-nav__btn {
-  background: global.$btn-color;
-  color: global.$accent-color;
-  font-size: 16px;
-  transition: 0.3s;
-  height: 80px;
-  width: 190px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: global.$ff-mont;
-  position: relative;
-
-  &::before {
-    content: "";
-    background: url(../img/header/header_mail.svg) no-repeat center center/cover;
-    width: 17px;
-    height: 12px;
-    position: absolute;
-    left: 25%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  a {
+.p-header__nav-items {
+  & > li:last-child {
+    background: global.$btn-color;
+    color: global.$accent-color;
+    font-size: 16px;
+    transition: 0.3s;
     height: 80px;
     width: 190px;
+    display: flex;
     justify-content: center;
-    padding-left: 20px;
-  }
+    align-items: center;
+    font-family: global.$ff-mont;
+    position: relative;
 
-  span {
-    margin-left: 10px;
+    &::before {
+      content: "";
+      background: url(../img/header/header_mail.svg) no-repeat center
+        center/cover;
+      width: 17px;
+      height: 12px;
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    a {
+      height: 80px;
+      width: 190px;
+      justify-content: center;
+      padding-left: 20px;
+    }
+
+    span {
+      margin-left: 10px;
+    }
   }
 }

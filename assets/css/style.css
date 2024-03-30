@@ -795,14 +795,6 @@ html #wpadminbar {
     padding-right: 20px;
   }
 }
-.p-header__nav li:nth-child(6) {
-  padding-right: 40px;
-}
-@media screen and (min-width: 1023px) and (max-width: 1145px) {
-  .p-header__nav li:nth-child(6) {
-    padding-right: 20px;
-  }
-}
 .p-header__nav li > a {
   padding-bottom: 3px;
   font-size: 14px;
@@ -820,13 +812,13 @@ html #wpadminbar {
   color: #343434;
 }
 
-.p-header__nav li:nth-child(5) {
+.p-header__nav li:nth-child(4) {
   position: relative;
 }
-.p-header__nav li:nth-child(5):hover ul {
+.p-header__nav li:nth-child(4):hover .sub-menu {
   display: block;
 }
-.p-header__nav li:nth-child(5) ul {
+.p-header__nav li:nth-child(4) .sub-menu {
   -webkit-transition: 1s;
   transition: 1s;
   display: none;
@@ -837,7 +829,7 @@ html #wpadminbar {
   border: none;
   font-weight: 300;
 }
-.p-header__nav li:nth-child(5) ul li {
+.p-header__nav li:nth-child(4) .sub-menu li {
   background-color: #fff;
   height: 45px;
   position: relative;
@@ -849,7 +841,7 @@ html #wpadminbar {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.p-header__nav li:nth-child(5) ul li::before {
+.p-header__nav li:nth-child(4) .sub-menu li::before {
   content: "";
   background: url(../img/header/header_icon.svg) no-repeat center center/cover;
   width: 17px;
@@ -860,14 +852,14 @@ html #wpadminbar {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.p-header__nav li:nth-child(5) ul li:hover {
+.p-header__nav li:nth-child(4) .sub-menu li:hover {
   background: #f2f2ef;
 }
-.p-header__nav li:nth-child(5) ul li a {
+.p-header__nav li:nth-child(4) .sub-menu li a {
   font-size: 14px;
 }
 
-.p-header-nav__btn {
+.p-header__nav-items > li:last-child {
   background: #222222;
   color: #fff;
   font-size: 16px;
@@ -887,7 +879,7 @@ html #wpadminbar {
   font-family: "Montserrat", sans-serif;
   position: relative;
 }
-.p-header-nav__btn::before {
+.p-header__nav-items > li:last-child::before {
   content: "";
   background: url(../img/header/header_mail.svg) no-repeat center center/cover;
   width: 17px;
@@ -898,10 +890,10 @@ html #wpadminbar {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.p-header-nav__btn:hover {
+.p-header__nav-items > li:last-child:hover {
   opacity: 0.8;
 }
-.p-header-nav__btn a {
+.p-header__nav-items > li:last-child a {
   height: 80px;
   width: 190px;
   -webkit-box-pack: center;
@@ -909,7 +901,7 @@ html #wpadminbar {
           justify-content: center;
   padding-left: 20px;
 }
-.p-header-nav__btn span {
+.p-header__nav-items > li:last-child span {
   margin-left: 10px;
 }
 
@@ -1435,12 +1427,6 @@ html #wpadminbar {
     margin-top: 80px;
   }
 }
-.p-result__item:first-child {
-  margin-top: 50px;
-}
-.p-result__item:last-child {
-  margin-bottom: 0;
-}
 .p-result__item-img {
   position: relative;
 }
@@ -1494,6 +1480,14 @@ html #wpadminbar {
   left: 1%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.p-result__item.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0 10px;
+  padding: 0;
 }
 
 .p-result__btn {
@@ -1826,6 +1820,7 @@ html #wpadminbar {
   }
 }
 .p-AboutFv__img {
+  margin-top: 3%;
   width: 70.27%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
