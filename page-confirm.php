@@ -2,9 +2,10 @@
 
 <section class="l-contactFv" id="about">
     <div class="p-contactFv">
-        <div class="p-contactFv__breadcrumb">
-            <p>TOP</p>
-            <p>お問い合わせ</p>
+        <div class="breadcrumbs p-contactFv__breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+            <?php if (function_exists('bcn_display')) {
+                bcn_display();
+            } ?>
         </div>
         <div class="p-contactFv__wrap">
             <div class="p-contactFv__ttl">

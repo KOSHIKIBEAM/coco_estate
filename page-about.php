@@ -2,9 +2,10 @@
 
 <section class="l-AboutFv" id="about">
     <div class="p-AboutFv">
-        <div class="p-AboutFv__breadcrumb">
-            <p>TOP</p>
-            <p>私たちについて</p>
+        <div class="breadcrumbs p-AboutFv__breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
+            <?php if (function_exists('bcn_display')) {
+                bcn_display();
+            } ?>
         </div>
         <div class="p-AboutFv__wrap">
             <div class="p-AboutFv__ttl">

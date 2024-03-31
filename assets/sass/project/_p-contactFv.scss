@@ -26,18 +26,7 @@
 
   &__breadcrumb {
     display: flex;
-
-    @include global.mq("pc") {
-      padding-top: 21px;
-      padding-left: 123px;
-    }
-
-    @include global.mq("tab") {
-      padding: 1% 3%;
-    }
-    @include global.mq("sp") {
-      padding: 1% 3%;
-    }
+    padding: 1% 3%;
 
     p {
       color: global.$text-color;
@@ -60,6 +49,14 @@
         &::before {
           content: none;
         }
+      }
+    }
+
+    & > span {
+      margin: 0 8px;
+
+      &:first-child {
+        margin: 0 8px 0 0;
       }
     }
   }
