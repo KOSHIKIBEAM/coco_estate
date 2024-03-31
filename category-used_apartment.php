@@ -47,7 +47,7 @@
                     <a href="/category/new_house">新築戸建</a>
                     <a href="/category/existing_home">中古戸建</a>
                     <a href="/category/newly_built_apartment">新築マンション</a>
-                    <a href="/category/used_apartment">中古マンション</a>
+                    <a class="active" href="/category/used_apartment">中古マンション</a>
                 </div>
             </div>
             <div class="p-search__btn-borrow">
@@ -62,91 +62,44 @@
 
 <section class="l-result" id="result">
     <div class="p-result">
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item1.png" alt=""></div>
-                <div class="p-result__item-cate">土地</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item2.png" alt=""></div>
-                <div class="p-result__item-cate">新築戸建</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">3LDK｜0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item3.png" alt=""></div>
-                <div class="p-result__item-cate">土地</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">1LDK｜0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item1.png" alt=""></div>
-                <div class="p-result__item-cate">土地</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item2.png" alt=""></div>
-                <div class="p-result__item-cate">新築戸建</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">3LDK｜0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item3.png" alt=""></div>
-                <div class="p-result__item-cate">土地</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">1LDK｜0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item1.png" alt=""></div>
-                <div class="p-result__item-cate">土地</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item2.png" alt=""></div>
-                <div class="p-result__item-cate">新築戸建</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">3LDK｜0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
-        <a href="/single.html" class="p-result__item">
-            <div class="p-result__item-body">
-                <div class="p-result__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item3.png" alt=""></div>
-                <div class="p-result__item-cate">土地</div>
-                <div class="p-result__item-address">静岡市葵区◎◎◎◎◎</div>
-                <div class="p-result__item-price">1LDK｜0,000万円</div>
-                <div class="p-result__item-access">JR◎◎駅まで徒歩0分</div>
-            </div>
-        </a>
+        <?php if (have_posts()) : // 記事があれば表示 
+        ?>
+            <?php while (have_posts()) : // 記事数分ループ 
+            ?>
+                <?php the_post(); ?>
+                <a href="<?php the_permalink(); ?>" class="p-result__item">
+                    <div class="p-result__item-body">
+                        <div class="p-result__item-img">
+                            <?php if (has_post_thumbnail()) :
+                            ?>
+                                <?php the_post_thumbnail(); ?>
+                            <?php else :
+                            ?>
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/result/item3.png" alt="">
+                            <?php endif; ?>
+                        </div>
+
+                        <?php $category = get_the_category(); ?>
+                        <?php if ($category[0]) : ?>
+                            <div class="p-result__item-cate"><?php echo $category[0]->cat_name; ?></div>
+                        <?php endif; ?>
+
+                        <div class="p-result__item-address"><?php the_title(); ?></div>
+                        <?php if (get_field('price')) : ?>
+                            <div class="p-result__item-price"><?php the_field('price'); ?></div>
+                        <?php endif; ?>
+                        <?php if (get_field('access')) : ?>
+                            <div class="p-result__item-access"><?php the_field('access'); ?></div>
+                        <?php endif; ?>
+                    </div>
+                </a>
+            <?php endwhile; ?>
+        <?php endif; ?>
     </div>
+    <!-- 
     <a href="#" class="p-result__btn">
         VIEW MORE
-    </a>
+    </a> -->
 </section>
 
 <section class="l-flow" id="flow">

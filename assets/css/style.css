@@ -1308,6 +1308,11 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+.p-search .p-search__btn-buy-btn .active,
+.p-search .p-search__btn-borrow-btn .active {
+  background: #ffdb00;
+  color: #343434;
+}
 @media screen and (min-width: 1023px) and (max-width: 1359px) {
   .p-search .p-search__btn-buy-btn,
   .p-search .p-search__btn-borrow-btn {
@@ -2790,9 +2795,6 @@ a:hover {
 }
 .p-single__breadcrumb > span {
   margin: 0 8px;
-}
-.p-single__breadcrumb > span:nth-child(2) {
-  display: none;
 }
 .p-single__breadcrumb > span:first-child {
   margin: 0 8px 0 0;

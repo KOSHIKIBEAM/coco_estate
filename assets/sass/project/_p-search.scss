@@ -76,6 +76,11 @@
     flex-wrap: wrap;
     align-items: center;
 
+    .active {
+      background: global.$main-color;
+      color: global.$text-color;
+    }
+
     @media screen and (min-width: 1023px) and (max-width: 1359px) {
       height: 133px;
     }
