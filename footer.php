@@ -13,7 +13,7 @@
         </div>
         <div class="p-footer__bottom">
             <div class="p-footer__bottom-left">
-                <a href="#" class="p-footer__bottom-left-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/footer/footer-logo.png" alt="footer-logo"></a>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__bottom-left-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/footer/footer-logo.png" alt="footer-logo"></a>
                 <p>〒422-8072 静岡市駿河区小黒3-1-35<br>
                     TEL：054-204-3017<br>
                     FAX：054-204-3018</p>
@@ -39,12 +39,30 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
-    // ドロワー
-    jQuery(".js-drawer").on("click", function(e) {
-        e.preventDefault();
-        let targetClass = jQuery(this).attr("data-target");
-        jQuery("." + targetClass).toggleClass("is-checked");
-        return false;
+    $(function() {
+        // ハンバーガーボタンクリックで実行
+        $(".js-drawer").click(function() {
+            $(".p-drawer__icon").toggleClass("is-checked");
+            $(".p-drawer__content-cover").toggleClass("is-checked");
+        });
+
+        $("a").click(function() {
+            $(".p-drawer__icon").removeClass("is-checked");
+            $(".p-drawer__content-cover").removeClass("is-checked");
+        });
+
+        // ページ内スクロール
+        $('a[href^="#"]').click(function() {
+            const speed = 400;
+            let href = $(this).attr("href");
+            let target = $(href == "#" || href == "" ? "html" : href);
+            let position = target.offset().top;
+            $("body,html").animate({
+                scrollTop: position
+            }, speed, "swing");
+            return false;
+        });
+        // function
     });
 
 

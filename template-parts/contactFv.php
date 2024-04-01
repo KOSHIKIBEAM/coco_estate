@@ -10,7 +10,7 @@
                 <h1>CONTACT</h1>
                 <p>お問い合わせ</p>
             </div>
-            <div class="p-contactFv__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/contact/contactFv.png" alt="contactFv.png"></div>
+            <div class="p-contactFv__img"><img src="http://coco-estate.jp/wp-content/uploads/2024/04/ContactFV.png" alt="contactFv.png"></div>
         </div>
     </div>
 

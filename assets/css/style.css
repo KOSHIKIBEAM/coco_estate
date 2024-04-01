@@ -111,6 +111,7 @@ a:hover {
   background-color: #fff;
   margin: 0 0 0 auto;
   position: relative;
+  z-index: 20;
 }
 
 .l-fv {
@@ -674,8 +675,18 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.p-confirm .wpcf7-previous {
-  margin-right: 30px;
+@media screen and (max-width: 599px) {
+  .p-confirm > p {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-confirm .wpcf7-previous {
+    margin-right: 30px;
+  }
 }
 
 .wpcf7-spinner {
@@ -694,6 +705,12 @@ a:hover {
   padding: 21px 72px;
   background: #343434;
   color: #fff;
+}
+@media screen and (max-width: 599px) {
+  .c-submit__btn {
+    width: 100%;
+    padding: 15px 39px;
+  }
 }
 .c-submit__btn:hover {
   opacity: 0.8;
@@ -1025,7 +1042,7 @@ a:hover {
 }
 .p-drawer__content-cover.is-checked {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 1;
 }
 .p-drawer__content-cover .p-drawer__logo {
   width: 280px;
@@ -2527,8 +2544,7 @@ a:hover {
   }
 }
 .p-footer__bottom-right-list li:nth-child(4) .sub-menu li {
-  font-size: 14px;
-  margin-top: 10px;
+  margin-top: 3px;
   padding-bottom: 0;
 }
 @media screen and (min-width: 1024px) {
@@ -2537,6 +2553,7 @@ a:hover {
   }
 }
 .p-footer__bottom-right-list li:nth-child(4) .sub-menu li a {
+  font-size: 13px;
   position: relative;
 }
 .p-footer__bottom-right-list li:nth-child(4) .sub-menu li a::before {
@@ -2546,7 +2563,7 @@ a:hover {
   background: #fff;
   position: absolute;
   top: 50%;
-  left: -10px;
+  left: -8px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -4600,7 +4617,7 @@ a:hover {
 }
 @media screen and (max-width: 599px) {
   .c-submit__btn-wrap .c-submit__btn {
-    width: 120px;
+    width: 100%;
     margin-right: 0;
     font-size: 15px;
   }

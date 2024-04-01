@@ -4,9 +4,15 @@
   & > p {
     display: flex;
     justify-content: center;
+
+    @include global.mq("sp") {
+      flex-flow: column;
+    }
   }
   .wpcf7-previous {
-    margin-right: 30px;
+    @include global.mq("pc") {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -25,6 +31,11 @@
   padding: 21px 72px;
   background: #343434;
   color: #fff;
+
+  @include global.mq("sp") {
+    width: 100%;
+    padding: 15px 39px;
+  }
 
   &:hover {
     opacity: 0.8;

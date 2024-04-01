@@ -35,7 +35,7 @@
         <?php endif; ?>
     </div>
 
-    <a href="#" class="p-result__btn">
+    <a href="#result" class="p-result__btn">
         VIEW MORE
     </a>
 </section>

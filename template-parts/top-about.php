@@ -21,14 +21,14 @@
             <div class="p-TopAbout__bottom-img">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/TopAbout/service-img.png" alt="service-img">
             </div>
-            <a href="#" class="p-TopAbout__bottom-text">
+            <a href="/about#AboutService" class="p-TopAbout__bottom-text">
                 <p>SERVICE</p>
                 <p>事業内容</p>
             </a>
         </div>
         <div>
             <div class="p-TopAbout__bottom-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/TopAbout/company-img.png" alt="company-img"></div>
-            <a href="#" class="p-TopAbout__bottom-text">
+            <a href="/#AboutProfile" class="p-TopAbout__bottom-text">
                 <p>COMPANY</p>
                 <p>会社概要</p>
             </a>
