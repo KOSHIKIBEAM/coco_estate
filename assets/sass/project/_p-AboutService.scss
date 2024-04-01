@@ -27,6 +27,9 @@
       flex-wrap: wrap;
     }
   }
+  .active {
+    background: global.$main-color;
+  }
   &__list {
     margin-right: 13px;
     background: #fff;
@@ -39,6 +42,9 @@
     position: relative;
     width: calc(100% / 4 - 13px * 3 / 4);
 
+    &:hover {
+      background: global.$main-color;
+    }
     &:last-child {
       margin-right: 0;
     }

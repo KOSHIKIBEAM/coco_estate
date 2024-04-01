@@ -1,19 +1,19 @@
 <footer class="l-footer" id="footer">
     <div class="p-footer">
         <div class="p-footer__top">
-            <div class="p-footer__top-mail">
+            <a href="/contact" class="p-footer__top-mail">
                 <p>CONTACT</p>
-            </div>
+            </a>
             <div class="p-footer__top-tel">
                 <div class="p-footer__top-tel-txt">
-                    <p>054-204-3017</p>
+                    <a href="tel:054-204-3017">054-204-3017</a>
                     <p>[ 受付時間 ] 0:00 ~ 00:00</p>
                 </div>
             </div>
         </div>
         <div class="p-footer__bottom">
             <div class="p-footer__bottom-left">
-                <a href="#" class="p-footer__bottom-left-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/footer/footer-logo.png" alt=""></a>
+                <a href="#" class="p-footer__bottom-left-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/footer/footer-logo.png" alt="footer-logo"></a>
                 <p>〒422-8072 静岡市駿河区小黒3-1-35<br>
                     TEL：054-204-3017<br>
                     FAX：054-204-3018</p>
@@ -28,6 +28,7 @@
                         ]
                     );
                     ?>
+                    <p class="copylight">© COCO-ESTATE Co.,Ltd. All Rights Reserved.</p>
                 </nav>
             <?php endif; ?>
         </div>

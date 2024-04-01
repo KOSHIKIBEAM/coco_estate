@@ -101,18 +101,18 @@ accordionsArr.forEach((accordion) => {
   });
 });
 
-// var show = 3; //最初に表示する件数
-// var num = 6; //clickごとに表示したい件数
-// var contents = ".p-result__item"; // 対象のlist
-// $(contents + ":nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
-// $(".p-result__btn").on("click", function () {
-//   $(contents + ".is-hidden")
-//     .slice(0, num)
-//     .removeClass("is-hidden");
-//   if ($(contents + ".is-hidden").length == 0) {
-//     $(".p-result__btn").fadeOut();
-//   }
-// });
+var show = 9; //最初に表示する件数
+var num = 6; //clickごとに表示したい件数
+var contents = ".p-result__item"; // 対象のlist
+$(contents + ":nth-child(n + " + (show + 1) + ")").addClass("is-hidden");
+$(".p-result__btn").on("click", function () {
+  $(contents + ".is-hidden")
+    .slice(0, num)
+    .removeClass("is-hidden");
+  if ($(contents + ".is-hidden").length == 0) {
+    $(".p-result__btn").fadeOut();
+  }
+});
 
 var swiper = new Swiper(".mySwiper", {
   loop: true,
@@ -131,4 +131,17 @@ var swiper2 = new Swiper(".mySwiper2", {
   thumbs: {
     swiper: swiper,
   },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lists = document.querySelectorAll(".p-AboutService__list");
+  const listlength = lists.length;
+  for (let i = 0; 1 < listlength; i++) {
+    lists[i].addEventListener("click", function () {
+      lists.forEach(function (list) {
+        list.classList.remove("active");
+      });
+      lists[i].classList.add("active");
+    });
+  }
 });

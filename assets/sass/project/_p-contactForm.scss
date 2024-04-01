@@ -76,7 +76,7 @@
   }
 }
 
-.p-contactForm__form {
+.wpcf7-form {
   dl {
     width: 100%;
     margin: 0;
@@ -201,8 +201,7 @@
     margin-top: 0.75em;
 
     input {
-      width: 300px;
-      height: 64px;
+      padding: 15px 39px;
       background: #343434;
       color: #fff;
       border-radius: 4px;
@@ -264,15 +263,14 @@
     input {
       width: 129px;
       margin-right: 20px;
+      margin-left: 10px;
     }
   }
 
   .post-wrap {
-    @include global.mq("sp") {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .address-level1,

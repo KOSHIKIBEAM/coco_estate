@@ -12,7 +12,7 @@
                 <h1>ABOUT US</h1>
                 <p>私たちについて</p>
             </div>
-            <div class="p-AboutFv__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/AboutFV.png" alt=""></div>
+            <div class="p-AboutFv__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/AboutFV.png" alt="AboutFv__img"></div>
         </div>
     </div>
 
@@ -36,22 +36,22 @@
         </div>
         <div class="p-AboutService__lists">
             <a href="#buy" class="p-AboutService__list">
-                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img1.png" alt="">
+                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img1.png" alt="service-img">
                     <p>買いたい</p>
                 </div>
             </a>
             <a href="#borrow" class="p-AboutService__list">
-                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img2.png" alt="">
+                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img2.png" alt="service-img">
                     <p>借りたい</p>
                 </div>
             </a>
             <a href="#sell" class="p-AboutService__list">
-                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img3.png" alt="">
+                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img3.png" alt="service-img">
                     <p>売りたい</p>
                 </div>
             </a>
             <a href="#consult" class="p-AboutService__list">
-                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img4.png" alt="">
+                <div class="p-AboutService__list-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img4.png" alt="service-img">
                     <p>相談したい</p>
                 </div>
             </a>
@@ -64,7 +64,7 @@
                     </p>
                     <p>お客様がどういう目的で、どのような不動産を探しているかの詳細をお伺いし、豊富なネットワークの中からお客様が求める不動産を探し、ご提案させていただきます。</p>
                 </div>
-                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img1.png" alt="">
+                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img1.png" alt="service-img">
                 </div>
             </div>
             <div id="borrow" class="p-AboutService__item">
@@ -74,7 +74,7 @@
                     <p>単身やファミリーの居住用から、事務所や店舗<span>など</span>の事業用、駐車場<span>など</span>の賃貸物件を幅広く取り揃えております。エリアや間取り、設備<span>など</span>様々なご要望に合わせて、ご提案させていただきます。
                     </p>
                 </div>
-                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img2.png" alt="">
+                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img2.png" alt="service-img">
                 </div>
             </div>
             <div id="sell" class="p-AboutService__item">
@@ -83,7 +83,7 @@
                     <p><span>不動産査定</span><span>など</span></p>
                     <p>お客様が売却したい不動産に関して、適正な不動産査定を行い、適正な評価をご提示いたします。</p>
                 </div>
-                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img3.png" alt="">
+                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img3.png" alt="service-img">
                 </div>
             </div>
             <div id="consult" class="p-AboutService__item">
@@ -94,7 +94,7 @@
                     <p>所有地を活用したいがどうしていいかわからない、急な転勤で自宅を手放すことになった、土地の相続に関して<span>など</span>、不動産に関する様々な悩みや疑問<span>など</span>、お気軽にご相談ください。
                     </p>
                 </div>
-                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img4.png" alt="">
+                <div class="p-AboutService__item-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/about/service/service-img4.png" alt="service-img">
                 </div>
             </div>
         </div>
@@ -152,19 +152,6 @@
         </div>
     </div>
 </section>
-
-<section class="l-access" id="access">
-    <div class="p-access">
-        <div class="c-section__ttl">
-            <h2>ACCESS</h2>
-            <p>アクセス</p>
-        </div>
-        <p>〒422-8072　静岡市駿河区小黒3-1-35</p>
-
-        <div class="p-access__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.4804713188514!2d138.4010586760127!3d34.9696279728253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601a361c0b1a4279%3A0x44fd2e49f0fe518b!2z44CSNDIyLTgwNzIg6Z2Z5bKh55yM6Z2Z5bKh5biC6ae_5rKz5Yy65bCP6buS77yT5LiB55uu77yR4oiS77yT77yV!5e0!3m2!1sja!2sjp!4v1711333264919!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-</section>
+<?php get_template_part('template-parts/access'); ?>
 
 <?php get_footer(); ?>

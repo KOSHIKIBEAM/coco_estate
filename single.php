@@ -301,9 +301,13 @@
     </div>
     <div class="p-single__btn">
         <div class="p-single__btn-inner">
-            <a href="#">前へ</a>
-            <a href="#">一覧へ戻る</a>
-            <a href="#">次へ</a>
+            <?php if (get_previous_post()) : ?>
+                <div class="p-single__btn-prev"><?php previous_post_link('%link', '前へ'); ?></div>
+            <?php endif; ?>
+            <a href="<?php echo esc_url(home_url('/#search')); ?>" class="p-single__btn-back">一覧へ戻る</a>
+            <?php if (get_next_post()) : ?>
+                <div class="p-single__btn-next"><?php next_post_link('%link', '次へ'); ?></div>
+            <?php endif; ?>
         </div>
     </div>
 </section>

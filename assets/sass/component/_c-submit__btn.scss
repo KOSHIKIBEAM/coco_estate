@@ -1,8 +1,38 @@
 @use "../global" as global;
 
+.p-confirm {
+  & > p {
+    display: flex;
+    justify-content: center;
+  }
+  .wpcf7-previous {
+    margin-right: 30px;
+  }
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+
 .c-submit__btn {
-  width: 300px;
-  height: 64px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 21px 72px;
+  background: #343434;
+  color: #fff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.wpcf7-previous,
+.wpcf7-submit {
   border-radius: 4px;
   text-decoration: none;
   font-size: 18px;
@@ -16,11 +46,14 @@
   }
 }
 
-.back {
+.wpcf7-previous {
+  padding: 21px 45px;
   background: #fff;
   color: #343434;
 }
-.send {
+
+.wpcf7-submit {
+  padding: 21px 72px;
   background: #343434;
   color: #fff;
 }
