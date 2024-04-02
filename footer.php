@@ -1,40 +1,41 @@
 <footer class="l-footer" id="footer">
     <div class="p-footer">
-        <div class="p-footer__top">
-            <a href="/contact" class="p-footer__top-mail">
-                <p>CONTACT</p>
-            </a>
-            <div class="p-footer__top-tel">
-                <div class="p-footer__top-tel-txt">
-                    <a href="tel:054-204-3017">054-204-3017</a>
-                    <p>[ 受付時間 ] 0:00 ~ 00:00</p>
-                </div>
-            </div>
+
+        <div class="p-footer__left">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__left-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/footer/footer-logo.png" alt="footer-logo"></a>
+            <p>〒422-8072 静岡市駿河区小黒3-1-35<br>
+                TEL：054-204-3017<br>
+                FAX：054-204-3018</p>
         </div>
-        <div class="p-footer__bottom">
-            <div class="p-footer__bottom-left">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__bottom-left-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/footer/footer-logo.png" alt="footer-logo"></a>
-                <p>〒422-8072 静岡市駿河区小黒3-1-35<br>
-                    TEL：054-204-3017<br>
-                    FAX：054-204-3018</p>
-            </div>
-            <?php if (has_nav_menu('footer_menu')) : ?>
-                <nav class="p-footer__bottom-right">
-                    <?php
-                    wp_nav_menu(
-                        [
-                            'theme_location' => 'footer_menu',
-                            'menu_class'     => 'p-footer__bottom-right-list',
-                        ]
-                    );
-                    ?>
-                    <p class="copylight">© COCO-ESTATE Co.,Ltd. All Rights Reserved.</p>
-                </nav>
-            <?php endif; ?>
-        </div>
+        <?php if (has_nav_menu('footer_menu')) : ?>
+            <nav class="p-footer__right">
+                <?php
+                wp_nav_menu(
+                    [
+                        'theme_location' => 'footer_menu',
+                        'menu_class'     => 'p-footer__right-list',
+                    ]
+                );
+                ?>
+                <p class="copylight">© COCO-ESTATE Co.,Ltd. All Rights Reserved.</p>
+            </nav>
+        <?php endif; ?>
+
 
     </div>
 </footer>
+
+<div class="p-screen__fixed">
+    <a href="/contact" class="p-screen__fixed-mail">
+        <p>CONTACT</p>
+    </a>
+    <div class="p-screen__fixed-tel">
+        <div class="p-screen__fixed-txt">
+            <a href="tel:054-204-3017">054-204-3017</a>
+            <p>[ 受付時間 ] 0:00 ~ 00:00</p>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

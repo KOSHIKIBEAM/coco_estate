@@ -54,7 +54,7 @@
     }
   }
 
-  &__bottom {
+  & {
     display: flex;
     width: 65.885%;
     margin: -7% auto 0;
@@ -86,7 +86,7 @@
     }
   }
 }
-.p-TopAbout__bottom-text {
+.p-TopAbout__text {
   background: global.$main-color;
   padding: 17px 0 26px;
   display: inline-block;

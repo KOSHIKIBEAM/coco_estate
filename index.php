@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <?php get_template_part('template-parts/fv'); ?>
 
 <section class="l-search" id="search">
@@ -27,7 +28,6 @@
         </div>
     </div>
 </section>
-
 
 <?php get_template_part('template-parts/result'); ?>
 <?php get_template_part('template-parts/flow'); ?>

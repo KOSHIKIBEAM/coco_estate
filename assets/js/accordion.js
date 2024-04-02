@@ -145,3 +145,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+const screen__fixed = document.querySelector(".p-screen__fixed");
+
+// スクロールされたら表示
+window.addEventListener("scroll", scroll_event);
+function scroll_event() {
+  if (window.pageYOffset > 180) {
+    screen__fixed.style.opacity = "1";
+  } else if (window.pageYOffset < 180) {
+    screen__fixed.style.opacity = "0";
+  }
+}

@@ -16,19 +16,19 @@
         </div>
     </div>
 
-    <div class="p-TopAbout__bottom">
+    <div class="p-TopAbout">
         <div>
-            <div class="p-TopAbout__bottom-img">
+            <div class="p-TopAbout__img">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/TopAbout/service-img.png" alt="service-img">
             </div>
-            <a href="/about#AboutService" class="p-TopAbout__bottom-text">
+            <a href="/about#AboutService" class="p-TopAbout__text">
                 <p>SERVICE</p>
                 <p>事業内容</p>
             </a>
         </div>
         <div>
-            <div class="p-TopAbout__bottom-img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/TopAbout/company-img.png" alt="company-img"></div>
-            <a href="/about#AboutProfile" class="p-TopAbout__bottom-text">
+            <div class="p-TopAbout__img"><img src="<?php echo get_template_directory_uri() ?>/assets/img/TopAbout/company-img.png" alt="company-img"></div>
+            <a href="/about#AboutProfile" class="p-TopAbout__text">
                 <p>COMPANY</p>
                 <p>会社概要</p>
             </a>

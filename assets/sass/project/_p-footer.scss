@@ -133,10 +133,10 @@
   }
 }
 
-.p-footer__bottom {
+.p-footer {
   display: flex;
   width: 81.99%;
-  margin: 59px auto 0px;
+  margin: 0px auto 0px;
   max-width: 1120px;
   justify-content: space-between;
 
@@ -144,16 +144,16 @@
     flex-flow: column;
     width: 100%;
     padding: 0 15px;
-    margin: 30px auto 0px;
+    margin: 0px auto 0px;
   }
   @include global.mq("sp") {
     flex-flow: column;
     width: 100%;
     padding: 0 15px;
-    margin: 20px auto 0px;
+    margin: 0px auto 0px;
   }
 }
-.p-footer__bottom-left {
+.p-footer__left {
   flex-shrink: 0;
   margin-top: 5px;
   width: 100%;
@@ -186,7 +186,7 @@
   }
 }
 
-.p-footer__bottom-right-list {
+.p-footer__right-list {
   display: flex;
 
   @include global.mq("tab") {
@@ -219,7 +219,7 @@
   }
 }
 
-.p-footer__bottom-right-list {
+.p-footer__right-list {
   li:nth-child(4) {
     .sub-menu {
       @include global.mq("sp") {
