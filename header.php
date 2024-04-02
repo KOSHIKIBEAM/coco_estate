@@ -35,7 +35,7 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
-    <title>Document</title>
+    <title>ココ・エステート株式会社</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <?php wp_head() ?>
 </head>

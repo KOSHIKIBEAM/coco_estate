@@ -13,6 +13,9 @@
     @include global.mq("pc") {
       margin-right: 30px;
     }
+    @include global.mq("tab") {
+      margin-right: 25px;
+    }
   }
 }
 

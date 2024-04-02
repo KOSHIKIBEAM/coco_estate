@@ -235,6 +235,7 @@ a:hover {
   .l-single::before {
     width: 40%;
     height: 18%;
+    max-height: 380px;
   }
 }
 
@@ -582,6 +583,129 @@ a:hover {
   }
 }
 
+.p-AboutFv__text .c-brackets {
+  padding: 0px 5px;
+  position: relative;
+  margin: 0 5px;
+}
+.p-AboutFv__text .c-brackets .c-brackets__inner {
+  text-align: center;
+  font-weight: 700;
+  color: #ffdb00;
+}
+.p-AboutFv__text .c-brackets:before, .p-AboutFv__text .c-brackets:after,
+.p-AboutFv__text .c-brackets .c-brackets__inner:before,
+.p-AboutFv__text .c-brackets .c-brackets__inner:after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-AboutFv__text .c-brackets:before, .p-AboutFv__text .c-brackets:after,
+  .p-AboutFv__text .c-brackets .c-brackets__inner:before,
+  .p-AboutFv__text .c-brackets .c-brackets__inner:after {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-AboutFv__text .c-brackets:before, .p-AboutFv__text .c-brackets:after,
+  .p-AboutFv__text .c-brackets .c-brackets__inner:before,
+  .p-AboutFv__text .c-brackets .c-brackets__inner:after {
+    width: 9px;
+    height: 9px;
+  }
+}
+.p-AboutFv__text .c-brackets:before {
+  border-left: solid 5px #ffdb00;
+  border-top: solid 5px #ffdb00;
+  top: 4px;
+  left: 0;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-AboutFv__text .c-brackets:before {
+    border-left: solid 4px #ffdb00;
+    border-top: solid 4px #ffdb00;
+    top: 11px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-AboutFv__text .c-brackets:before {
+    border-left: solid 3px #ffdb00;
+    border-top: solid 3px #ffdb00;
+    top: 2px;
+    left: 0;
+  }
+}
+.p-AboutFv__text .c-brackets:after {
+  border-right: solid 5px #ffdb00;
+  border-top: solid 5px #ffdb00;
+  top: 4px;
+  right: 0;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-AboutFv__text .c-brackets:after {
+    border-right: solid 4px #ffdb00;
+    border-top: solid 4px #ffdb00;
+    top: 11px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-AboutFv__text .c-brackets:after {
+    border-right: solid 3px #ffdb00;
+    border-top: solid 3px #ffdb00;
+    top: 2px;
+    right: 0;
+  }
+}
+.p-AboutFv__text .c-brackets .c-brackets__inner:before {
+  border-left: solid 5px #ffdb00;
+  border-bottom: solid 5px #ffdb00;
+  bottom: -3px;
+  left: 0;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-AboutFv__text .c-brackets .c-brackets__inner:before {
+    border-left: solid 4px #ffdb00;
+    border-bottom: solid 4px #ffdb00;
+    bottom: 4px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-AboutFv__text .c-brackets .c-brackets__inner:before {
+    border-left: solid 3px #ffdb00;
+    border-bottom: solid 3px #ffdb00;
+    bottom: 0px;
+    left: 0;
+  }
+}
+.p-AboutFv__text .c-brackets .c-brackets__inner:after {
+  border-right: solid 5px #ffdb00;
+  border-bottom: solid 5px #ffdb00;
+  bottom: -3px;
+  right: 0;
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-AboutFv__text .c-brackets .c-brackets__inner:after {
+    border-right: solid 4px #ffdb00;
+    border-bottom: solid 4px #ffdb00;
+    bottom: 4px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-AboutFv__text .c-brackets .c-brackets__inner:after {
+    border-right: solid 3px #ffdb00;
+    border-bottom: solid 3px #ffdb00;
+    bottom: 0px;
+    right: 0;
+  }
+}
+
 .c-section__ttl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,6 +810,11 @@ a:hover {
 @media screen and (min-width: 1024px) {
   .p-confirm .wpcf7-previous {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .p-confirm .wpcf7-previous {
+    margin-right: 25px;
   }
 }
 
@@ -3203,7 +3332,7 @@ a:hover {
 }
 
 .mySwiper2 {
-  height: 600px;
+  height: 100%;
   width: 100%;
 }
 
@@ -3288,6 +3417,12 @@ a:hover {
   font-size: 18px;
   color: #343434;
 }
+@media screen and (max-width: 599px) {
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 14px;
+  }
+}
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -3298,6 +3433,13 @@ a:hover {
   color: #343434;
   position: absolute;
   z-index: 2;
+}
+@media screen and (max-width: 599px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .swiper-button-next {
@@ -4227,7 +4369,8 @@ a:hover {
   transition: all 0.2s ease;
 }
 .wpcf7-form dd textarea {
-  height: 200px;
+  min-height: 200px;
+  resize: vertical;
 }
 .wpcf7-form .agree {
   font-size: 15px;

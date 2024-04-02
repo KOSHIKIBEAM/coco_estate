@@ -28,7 +28,7 @@
 }
 
 .mySwiper2 {
-  height: 600px;
+  height: 100%;
   width: 100%;
 }
 
@@ -102,6 +102,10 @@
 .swiper-button-prev:after {
   font-size: 18px;
   color: global.$text-color;
+
+  @include global.mq("sp") {
+    font-size: 14px;
+  }
 }
 
 .swiper-button-next,
@@ -113,6 +117,11 @@
   color: global.$text-color;
   position: absolute;
   z-index: 2;
+
+  @include global.mq("sp") {
+    width: 35px;
+    height: 35px;
+  }
 }
 .swiper-button-next {
   right: 4%;
