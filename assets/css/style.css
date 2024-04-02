@@ -4867,6 +4867,7 @@ a:hover {
   width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  opacity: 0;
 }
 .p-screen__fixed-mail, .p-screen__fixed-tel {
   width: 50%;
