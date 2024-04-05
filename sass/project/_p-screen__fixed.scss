@@ -1,0 +1,139 @@
+@use "../global" as global;
+
+.p-screen__fixed {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  vertical-align: middle;
+  background: global.$text-color;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0;
+
+  &-mail,
+  &-tel {
+    width: 50%;
+    height: 80px;
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-family: global.$ff-mont;
+      margin-left: 40px;
+
+      @include global.mq("tab") {
+        margin-left: 30px;
+      }
+      @include global.mq("sp") {
+        margin-left: 30px;
+      }
+    }
+  }
+  &-mail {
+    border-right: 1px solid global.$accent-color;
+    p {
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      font-size: 26px;
+      line-height: calc(32 / 26);
+      position: relative;
+
+      @include global.mq("tab") {
+        font-size: 18px;
+      }
+      @include global.mq("sp") {
+        font-size: 18px;
+      }
+
+      &::before {
+        content: "";
+        background: url(../img/footer/icon-mail.svg) no-repeat center
+          center/cover;
+        width: 26px;
+        height: 18px;
+        position: absolute;
+        top: 50%;
+        left: -20%;
+        transform: translate(-50%, -50%);
+
+        @include global.mq("tab") {
+          background: url(../img/footer/icon-mail.svg) no-repeat center center /
+            contain;
+          width: 18px;
+        }
+
+        @include global.mq("sp") {
+          background: url(../img/footer/icon-mail.svg) no-repeat center center /
+            contain;
+          width: 14px;
+        }
+      }
+    }
+  }
+  &-tel {
+    p {
+      &:nth-child(1) {
+        font-size: 26px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        line-height: 1.1;
+
+        @include global.mq("tab") {
+          font-size: 18px;
+        }
+        @include global.mq("sp") {
+          font-size: 16px;
+        }
+      }
+
+      &:nth-child(2) {
+        font-family: global.$ff-base;
+        font-size: 13px;
+        letter-spacing: 0.02em;
+        line-height: calc(18 / 13);
+
+        @include global.mq("tab") {
+          font-size: 12px;
+        }
+        @include global.mq("sp") {
+          font-size: 11px;
+        }
+      }
+      @include global.mq("tab") {
+        margin-left: 30px;
+      }
+      @include global.mq("sp") {
+        margin-left: 20px;
+      }
+    }
+  }
+  &-txt {
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url(../img/footer/icon-tel.svg) no-repeat center
+        center/contain;
+      width: 28px;
+      height: 25px;
+      position: absolute;
+      top: 50%;
+      left: 6%;
+      transform: translate(-50%, -50%);
+
+      @include global.mq("tab") {
+        width: 18px;
+      }
+      @include global.mq("sp") {
+        width: 14px;
+      }
+    }
+  }
+}

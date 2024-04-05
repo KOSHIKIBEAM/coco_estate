@@ -1,0 +1,162 @@
+@use "../global" as global;
+
+// ハンバーガーアイコン
+$drawer-bar-space: 4px;
+$drawer-bar-width: 22px;
+$drawer-bar-height: 2px;
+
+// -----
+// ドロワー
+// -----
+.p-drawer__icon {
+  display: none;
+  position: fixed;
+  right: 10%;
+  top: 10px;
+  z-index: map-get(global.$layer, "drawer") + 1;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+
+  @include global.mq("tab") {
+    display: block;
+  }
+
+  @include global.mq("sp") {
+    display: block;
+  }
+}
+
+.p-drawer__bars {
+  display: inline-block;
+  width: $drawer-bar-width;
+  height: $drawer-bar-height + ($drawer-bar-space + $drawer-bar-height) * 2;
+  position: relative;
+  vertical-align: bottom;
+
+  span {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    background: global.$main-color;
+    width: 100%;
+    height: $drawer-bar-height;
+    border-radius: 0;
+    transition: all 0.5s linear 0s;
+
+    &:nth-of-type(1) {
+      top: 0;
+    }
+
+    &:nth-of-type(2) {
+      top: $drawer-bar-space + $drawer-bar-height;
+    }
+
+    &:nth-of-type(3) {
+      top: ($drawer-bar-space + $drawer-bar-height) * 2;
+    }
+
+    .is-checked & {
+      &:nth-of-type(1) {
+        top: 10px;
+        transform: rotate(-45deg);
+        background: global.$text-color;
+      }
+
+      &:nth-of-type(2) {
+        background: transparent;
+      }
+
+      &:nth-of-type(3) {
+        top: 10px;
+        transform: rotate(45deg);
+        background: global.$text-color;
+      }
+    }
+  }
+}
+
+.p-drawer__content-cover {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(0);
+  top: 0;
+  bottom: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  transition: all 0.5s linear 0s;
+  background: global.$main-color;
+  z-index: map-get(global.$layer, "drawer");
+  padding-top: 36px;
+
+  &.is-checked {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .p-drawer__logo {
+    width: 280px;
+    margin: 40px auto;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+
+    img {
+      margin: 0px auto;
+      width: 95%;
+    }
+  }
+
+  .p-drawer__content-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 200px;
+    max-width: 100%;
+
+    .sub-menu {
+      li {
+        font-size: 13px;
+        a {
+          padding: 5px 5px 5px 15px;
+          position: relative;
+
+          &::before {
+            content: "";
+            height: 1px;
+            width: 10px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+
+    li {
+      &:nth-child(4) {
+        & > a {
+          padding: 12px 30px 5px 16px;
+        }
+      }
+      a {
+        text-decoration: none;
+        display: block;
+        position: relative;
+        padding: 12px 30px 12px 16px;
+        color: global.$text-color;
+        text-align: center;
+      }
+    }
+  }
+}

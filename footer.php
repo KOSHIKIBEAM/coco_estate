@@ -32,7 +32,7 @@
     <div class="p-screen__fixed-tel">
         <div class="p-screen__fixed-txt">
             <a href="tel:054-204-3017">054-204-3017</a>
-            <p>[ 受付時間 ] 0:00 ~ 00:00</p>
+            <p>[ 受付時間 ] 9:00〜19:00</p>
         </div>
     </div>
 </div>

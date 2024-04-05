@@ -1,0 +1,14 @@
+@use "../global" as global;
+
+.l-contactForm {
+  padding: 74px 0 118px;
+  text-align: center;
+  background: #f2f2ed;
+
+  @include global.mq("tab") {
+    padding: 50px 0 70px;
+  }
+  @include global.mq("sp") {
+    padding: 30px 0 50px;
+  }
+}

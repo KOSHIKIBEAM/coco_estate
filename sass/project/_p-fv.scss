@@ -1,0 +1,121 @@
+@use "../global" as global;
+
+.p-fv {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 560px;
+
+  @include global.mq("tab") {
+    height: 560px;
+  }
+  @include global.mq("sp") {
+    height: 560px;
+  }
+
+  &__txt {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+
+    @include global.mq("tab") {
+      margin-top: 0px;
+    }
+    @include global.mq("sp") {
+      margin-top: 0px;
+    }
+
+    p {
+      &:nth-child(1) {
+        font-size: 21px;
+        font-family: global.$ff-mont;
+        color: global.$main-color;
+        line-height: 1;
+
+        @include global.mq("tab") {
+          font-size: 16px;
+        }
+        @include global.mq("sp") {
+          font-size: 16px;
+        }
+      }
+      &:nth-child(2) {
+        font-size: 57px;
+        color: global.$accent-color;
+        font-weight: bold;
+
+        @include global.mq("tab") {
+          font-size: 32px;
+        }
+        @include global.mq("sp") {
+          font-size: 32px;
+        }
+      }
+      &:nth-child(3) {
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        margin-top: 40px;
+
+        @include global.mq("tab") {
+          font-size: 16px;
+        }
+        @include global.mq("sp") {
+          font-size: 16px;
+        }
+
+        span {
+          padding: 0px 5px;
+
+          @include global.mq("tab") {
+            padding: 0px 5px;
+          }
+
+          @include global.mq("sp") {
+            padding: 0px 5px;
+          }
+
+          &:nth-child(1) {
+            background: global.$accent-color;
+          }
+          &:nth-child(2) {
+            background: global.$main-color;
+          }
+        }
+      }
+      &:nth-child(4) {
+        color: global.$accent-color;
+        font-size: 18px;
+        margin-top: 22px;
+        letter-spacing: 0.02em;
+
+        @include global.mq("tab") {
+          font-size: 13px;
+          text-align: center;
+          margin-top: 22px;
+        }
+        @include global.mq("sp") {
+          font-size: 13px;
+          text-align: center;
+          margin-top: 22px;
+        }
+      }
+      &:nth-of-type(5) {
+        color: global.$accent-color;
+        font-size: 18px;
+        margin-top: 10px;
+
+        @include global.mq("tab") {
+          font-size: 13px;
+          margin-top: 10px;
+        }
+        @include global.mq("sp") {
+          font-size: 13px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

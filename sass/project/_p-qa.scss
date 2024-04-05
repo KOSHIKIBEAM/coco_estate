@@ -1,0 +1,264 @@
+@use "../global" as global;
+
+.p-qa {
+  width: 81.99%;
+  margin: 0 auto;
+  max-width: 1120px;
+
+  @include global.mq("tab") {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  @include global.mq("sp") {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* アコーディオン全体 */
+.p-qa__accordion {
+  margin: 45px auto 77px;
+
+  &:last-child {
+    margin: 45px auto 0px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: calc(40 / 25);
+    text-align: left;
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 13px;
+
+    @include global.mq("tab") {
+      font-size: 20px;
+      padding-left: 43px;
+      margin-left: 7%;
+    }
+    @include global.mq("sp") {
+      font-size: 20px;
+      padding-left: 43px;
+      margin-left: 7%;
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      background: global.$text-color;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/* アコーディオン */
+.p-qa__accordion-item {
+  margin-bottom: 25px;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  width: 89%;
+  margin: 0 auto 10px;
+
+  &:last-child {
+    margin: 0 auto;
+  }
+
+  @include global.mq("tab") {
+    width: 100%;
+  }
+  @include global.mq("sp") {
+    width: 100%;
+  }
+}
+
+/* アコーディオンのタイトル */
+.p-qa__accordion-title {
+  position: relative;
+  padding: 15px 60px 26px 65px;
+  cursor: pointer;
+  font-size: 18px;
+
+  @include global.mq("tab") {
+    padding: 15px 50px 15px 55px;
+  }
+  @include global.mq("sp") {
+    padding: 15px 50px 15px 55px;
+  }
+
+  img {
+    position: absolute;
+    top: 42%;
+    left: 3.5%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+
+    @include global.mq("tab") {
+      left: 28px;
+      top: 50%;
+    }
+    @include global.mq("sp") {
+      left: 28px;
+      top: 50%;
+    }
+  }
+}
+
+/* (+)アイコン */
+.p-qa__accordion-title::before,
+.p-qa__accordion-title::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: -15%;
+  bottom: 0;
+  margin: auto 0;
+  background-color: global.$text-color;
+  width: 20px;
+  height: 2px;
+  transition: all 0.3s;
+}
+
+.p-qa__accordion-title::after {
+  transform: rotate(90deg);
+}
+
+/* アコーディオンのコンテンツ */
+.p-qa__accordion-content {
+  padding: 17px 74px 30px 65px;
+  display: none;
+  cursor: pointer;
+  background: #f2f2ed;
+  position: relative;
+  font-size: 15px;
+  line-height: calc(30 / 15);
+
+  @include global.mq("tab") {
+    padding: 15px 50px 15px 55px;
+  }
+  @include global.mq("sp") {
+    padding: 15px 50px 15px 55px;
+  }
+
+  & > img {
+    position: absolute;
+    left: 3.5%;
+    top: 42px;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
+
+    @include global.mq("tab") {
+      left: 28px;
+      top: 40px;
+    }
+    @include global.mq("sp") {
+      left: 28px;
+      top: 40px;
+    }
+  }
+
+  &-body {
+    background: #fff;
+    padding: 22px 30px 47px;
+
+    @include global.mq("tab") {
+      padding: 22px 15px 15px;
+    }
+    @include global.mq("sp") {
+      padding: 22px 15px 15px;
+    }
+
+    &:nth-of-type(1) {
+      margin-top: 39px;
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 51px;
+    }
+    &:nth-of-type(3) {
+      margin-top: 50px;
+    }
+  }
+  &-ttl {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    padding-bottom: 5px;
+    border-bottom: 3px solid global.$main-color;
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 10px;
+
+    @include global.mq("tab") {
+      font-size: 18px;
+    }
+
+    @include global.mq("sp") {
+      font-size: 16px;
+    }
+
+    &::before {
+      content: "■";
+      font-size: 8px;
+      position: absolute;
+      top: 47%;
+      left: 0.5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-txt {
+    font-size: 15px;
+    line-height: calc(30 / 15);
+  }
+  &-img {
+    width: 85%;
+    margin: 55px auto 0;
+  }
+
+  .p-qa__accordion-img {
+    width: 85%;
+    margin: 55px auto 0;
+
+    @include global.mq("tab") {
+      margin: 20px auto 0;
+    }
+    @include global.mq("sp") {
+      margin: 15px auto 0;
+    }
+  }
+}
+
+.p-qa__accordion-content-line {
+  @include global.mq("pc") {
+    padding: 17px 74px 17px 65px;
+  }
+
+  & > img {
+    top: 50%;
+
+    @include global.mq("sp") {
+      top: 40px;
+    }
+  }
+}
+
+.p-qa__accordion-content.is-open {
+  display: block;
+}
+
+/* アコーディオン展開時の(-)アイコン */
+.p-qa__accordion-item.is-active .p-qa__accordion-title::before {
+  transform: rotate(180deg);
+}
+
+.p-qa__accordion-item.is-active .p-qa__accordion-title::after {
+  transform: rotate(180deg);
+  opacity: 0;
+}

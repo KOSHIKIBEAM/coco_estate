@@ -1,0 +1,54 @@
+@use "../global" as global;
+
+.p-single__table {
+  width: 81%;
+  margin: 0px auto;
+  font-size: 16px;
+
+  table {
+    width: 100%;
+  }
+
+  table,
+  td,
+  th {
+    border: 1px solid #d3d3c7;
+    border-collapse: collapse;
+  }
+
+  th {
+    background: global.$text-color;
+    color: global.$accent-color;
+    width: 260px;
+    padding: 18px 0;
+    text-align: center;
+
+    @include global.mq("tab") {
+      padding: 10px 0;
+      width: 100px;
+    }
+    @include global.mq("sp") {
+      padding: 10px 0;
+      width: 100px;
+    }
+  }
+  td {
+    width: calc(100% - 260px);
+    padding-left: 30px;
+    letter-spacing: -0.01em;
+
+    @include global.mq("tab") {
+      width: calc(100% - 100px);
+      padding: 10px;
+    }
+    @include global.mq("sp") {
+      width: calc(100% - 100px);
+      padding: 10px;
+    }
+
+    span {
+      font-size: 20px;
+      padding-right: 4px;
+    }
+  }
+}
