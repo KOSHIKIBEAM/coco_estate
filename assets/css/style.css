@@ -1783,7 +1783,7 @@ a:hover {
     width: 100%;
   }
 }
-.p-TopAbout {
+.p-TopAbout__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1791,7 +1791,7 @@ a:hover {
   margin: -7% auto 0;
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  .p-TopAbout {
+  .p-TopAbout__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -1799,38 +1799,38 @@ a:hover {
   }
 }
 @media screen and (max-width: 599px) {
-  .p-TopAbout {
+  .p-TopAbout__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
   }
 }
-.p-TopAbout > div {
+.p-TopAbout__bottom > div {
   width: 100%;
   margin-bottom: 30px;
 }
-.p-TopAbout > div:last-child {
+.p-TopAbout__bottom > div:last-child {
   margin-bottom: 0;
 }
 @media screen and (min-width: 1024px) {
-  .p-TopAbout > div {
+  .p-TopAbout__bottom > div {
     margin-right: 60px;
     width: calc(50% - 30px);
   }
-  .p-TopAbout > div:last-child {
+  .p-TopAbout__bottom > div:last-child {
     margin-right: 0;
   }
 }
 
-.p-TopAbout__text {
+.p-TopAbout__bottom-text {
   background: #ffdb00;
   padding: 17px 0 26px;
   display: inline-block;
   width: 100%;
   position: relative;
 }
-.p-TopAbout__text::before {
+.p-TopAbout__bottom-text::before {
   content: "";
   background: url(../img/TopAbout/icon.svg) no-repeat center center/cover;
   position: absolute;
@@ -1841,13 +1841,13 @@ a:hover {
   width: 24px;
   height: 24px;
 }
-.p-TopAbout__text p:nth-child(1) {
+.p-TopAbout__bottom-text p:nth-child(1) {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
-.p-TopAbout__text p:nth-child(2) {
+.p-TopAbout__bottom-text p:nth-child(2) {
   font-size: 13px;
   line-height: 1.2307692308;
 }
@@ -4867,6 +4867,7 @@ a:hover {
   width: 100%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  opacity: 0;
 }
 .p-screen__fixed-mail, .p-screen__fixed-tel {
   width: 50%;

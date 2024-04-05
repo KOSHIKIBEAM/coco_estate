@@ -18,7 +18,7 @@
         <div class="p-contactFv__text">
             <p>お急ぎの場合は、<br class="u-hidden-tab u-hidden-pc">直通電話をご利用ください。</p>
             <a href="tel:054-204-3017">054-204-3017</a>
-            <p>【　受付時間　】　00:00 ~ 00:00</p>
+            <p>【　受付時間　】　9:00〜19:00</p>
         </div>
     </div>
 </section>
