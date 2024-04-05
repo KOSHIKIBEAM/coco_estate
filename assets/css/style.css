@@ -818,6 +818,10 @@ a:hover {
   }
 }
 
+.wpcf7-not-valid-tip {
+  text-align: left;
+}
+
 .wpcf7-spinner {
   display: none;
 }
@@ -4704,6 +4708,7 @@ a:hover {
 .p-confirm dd {
   width: 95%;
   margin-left: 5%;
+  padding: 9px 0 11px;
 }
 @media screen and (min-width: 1024px) {
   .p-confirm dd {
@@ -4721,16 +4726,16 @@ a:hover {
 }
 
 .p-confirm__address .post {
-  margin-top: 10px;
+  padding: 9px 0 11px;
 }
 .p-confirm__address .address-level1 {
-  margin-top: 10px;
+  padding: 9px 0 11px;
 }
 .p-confirm__address .address-level2 {
-  margin-top: 18px;
+  padding: 9px 0 11px;
 }
 .p-confirm__address .address-level3 {
-  margin-top: 22px;
+  padding: 9px 0 11px;
 }
 
 .c-submit__btn-wrap {

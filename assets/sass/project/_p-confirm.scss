@@ -82,6 +82,7 @@
   dd {
     width: calc(100% - 5%);
     margin-left: 5%;
+    padding: 9px 0 11px;
 
     @include global.mq("pc") {
       width: calc(100% - 320px);
@@ -99,17 +100,17 @@
 
 .p-confirm__address {
   .post {
-    margin-top: 10px;
+    padding: 9px 0 11px;
   }
 
   .address-level1 {
-    margin-top: 10px;
+    padding: 9px 0 11px;
   }
   .address-level2 {
-    margin-top: 18px;
+    padding: 9px 0 11px;
   }
   .address-level3 {
-    margin-top: 22px;
+    padding: 9px 0 11px;
   }
 }
 
