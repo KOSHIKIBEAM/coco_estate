@@ -78,6 +78,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #343434;
   font-family: "Noto Sans JP", sans-serif;
